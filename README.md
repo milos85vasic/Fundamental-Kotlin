@@ -1,9 +1,9 @@
-# Fundamental Kotlin
+# Fundamental Kotlin, First Edition
 Examples for the [Fundamental Kotlin](http://www.fundamental-kotlin.com/) book.
 
 # About the Book
-Reason I decided to write this book was my strong impression with this language. As I want as much as possible people to try it i decided to write this example-driven book. If any of you who read notice anything that is not correct in the code examples please report it to me (milos.vasic@fundamental-kotlin.com), I will check and apply the changes in code if needed. Since this is a new technology for me too it is possible that something may come up.
+Fundamental Kotlin is a book focused on Kotlin programming language and it’s comparison to Java. This book is focused on language’s most important features and aspects. Book doesn't go in too much theory since it's focused on exact examples with notes and code provided.
 
-This is the first book edition, so my plans for the second edition are to update examples, polish it and extend it. Everybody is wellcome to participate so if you have a better example (alternative) to existing ones please email me. I will be more than happy to include your examples.
+This book is for developers and for people who are on its way to become developers. It is essential to have at least some basic knowledge of computer programming, especially of Java. Fundamental Kotlin is imagined as guide to Kotlin for developers who spent some time on Java powered projects but it is not mandatory. If you were programming for some time, it should be easy for you to follow this book.
  
-[Milos Vasic](http://www.milosvasic.net/), September 2016.
+[Milos Vasic](http://www.milosvasic.net/), Fall 2016.
