@@ -1,6 +1,6 @@
 # Fundamental Kotlin - Second Edition
 
-- TBA / TBD
+- Added Kotlin JavaScript library example. 
 
 # Fundamental Kotlin - First Edition
 
