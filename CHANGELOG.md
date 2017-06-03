@@ -1,6 +1,7 @@
 # Fundamental Kotlin - Second Edition
 
-- Added Kotlin JavaScript library example. 
+- Added Kotlin JavaScript library example.
+- Added Gradle plain project example.
 
 # Fundamental Kotlin - First Edition
 
