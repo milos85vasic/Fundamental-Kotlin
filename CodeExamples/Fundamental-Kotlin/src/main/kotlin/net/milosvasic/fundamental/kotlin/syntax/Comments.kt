@@ -4,3 +4,11 @@ package net.milosvasic.fundamental.kotlin.syntax
 
 /* Multi-line
  * comment */
+
+/*
+*   /*
+*       /*
+*           // Nested multiline comment!
+*       */
+*   */
+*/
