@@ -9,3 +9,11 @@ fun power(x: Any): Double {
     }
     throw IllegalArgumentException("This method eals only with doubles!")
 }
+
+/**
+ * Casts explicitly into String.
+ */
+fun logger(value: Any) {
+    val toPrint: String = value as String
+    println("[ $toPrint ]")
+}
