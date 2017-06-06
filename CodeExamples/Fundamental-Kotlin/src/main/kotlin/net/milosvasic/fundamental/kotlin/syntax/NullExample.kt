@@ -8,3 +8,10 @@ package net.milosvasic.fundamental.kotlin.syntax
 fun incrementPositive(x: Int): Int? {
     return if (x > 0) x + 1 else null
 }
+
+/**
+ * s1 - cannot assign null values!
+ * s2 - can assign null values
+ */
+var s1: String = "this variable cannot store null references"
+var s2: String? = null
