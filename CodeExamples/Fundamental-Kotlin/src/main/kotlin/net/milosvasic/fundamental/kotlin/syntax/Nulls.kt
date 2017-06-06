@@ -15,3 +15,14 @@ fun incrementPositive(x: Int): Int? {
  */
 var s1: String = "this variable cannot store null references"
 var s2: String? = null
+
+
+/**
+ * If word is not null print it.
+ */
+fun printer(word: String?) {
+    word?.let {
+        val uppercase = word.toUpperCase()
+        println("Word [ $uppercase ]")
+    }
+}
