@@ -26,9 +26,12 @@ fun getCarPrice2(model: String): Int = when (model) {
     else -> throw IllegalArgumentException("We do not recognize this model.")
 }
 
-// FIXME: Change examples:
+// Examples continued:
 
-fun whenExample(userType: Int) {
+/**
+ * Validate user
+ */
+fun validate(userType: Int) {
     when (userType) {
         0 -> println("Registered user")
         1 -> print("Administrator")
@@ -38,52 +41,64 @@ fun whenExample(userType: Int) {
     }
 }
 
-fun whenExample2(userType: Int) {
+/**
+ * Validate user, simplified
+ */
+fun validate2(userType: Int) {
     when (userType) {
         0, 1 -> println("Welcome user.")
         else -> println("Permission denied.")
     }
 }
 
-fun whenExample3(userType: Int) {
+/**
+ * Validate user, extended
+ */
+fun validate3(userType: Int) {
     when (userType) {
         filterUserType(userType) -> {
             println("Subtype ok")
-            whenExample2(userType)
+            validate2(userType)
         }
         else -> print("Subtype not ok")
     }
 }
 
 fun filterUserType(userType: Int): Int {
-    if (userType >= 0 && userType < 2) {
-        return userType;
+    if (userType in 0..1) {
+        return userType
     }
     return -1
 }
 
-fun whenExample4(x: Int) {
-    val from = 0
-    val to = 100
-    when (x) {
-        in from..to -> println("PRECISE")
-        in (from / 2)..(to / 2) -> print("VERY PRECISE")
-        50 -> print("STRAIGHT IN TARGET")
-        else -> print("MISSED")
+/**
+ * Has user hit the center.
+ */
+fun precision(points: Int) {
+    val max = 100
+    when (points) {
+        in max / 5..max / 4 -> println("PRECISE")
+        in (max / 4)..max - 1 -> println("VERY PRECISE")
+        max -> println("STRAIGHT IN TARGET")
+        else -> println("MISSED")
     }
 }
 
-fun whenExample5(fullName: String) {
-    val isJohn = when (fullName) {
-        is String -> fullName.startsWith("John ")
-        else -> false
-    }
+/**
+ * So, is it John really? :D
+ */
+fun isJohn(fullName: String): Boolean = when (fullName) {
+    is String -> fullName.startsWith("John ")
+    else -> false
 }
 
-fun whenExample6(fullName: String) {
+/**
+ * Welcome message
+ */
+fun welcome(fullName: String) {
     when {
-        fullName.length == 0 -> println("Please enter your name.")
-        fullName.substring(0, 2).equals("X ") -> println("Hello Mr. X")
+        fullName.isEmpty() -> println("Please enter your name.")
+        fullName.substring(0, 2) == "X " -> println("Hello Mr. X")
         fullName.startsWith("John ") && !fullName.endsWith(" Smith") -> println("Hello John!")
         fullName.endsWith(" Smith") -> println("Hello agent Smith.")
         else -> println("Only secret agents allowed!")
