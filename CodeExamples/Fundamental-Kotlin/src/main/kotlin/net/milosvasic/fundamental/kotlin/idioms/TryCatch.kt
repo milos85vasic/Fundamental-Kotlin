@@ -1,16 +1,12 @@
 package net.milosvasic.fundamental.kotlin.idioms
 
-import net.milosvasic.fundamental.kotlin.idioms.getCarPrice
+import net.milosvasic.fundamental.kotlin.syntax.getCarPrice
 
-
-/**
- * Created by mvasic on 6/5/16.
- */
 fun tryCatchExample() {
     val carModels = listOf("BMW", "Fiat", "Mercedes", "Opel", "Renault")
-    for (carModel in carModels) {
+    for (model in carModels) {
         try {
-            println("$carModel has a price of ${getCarPrice(carModel)}")
+            println("$model has a price of ${getCarPrice(model)}")
         } catch(e: Exception) {
             println(e.message)
         }
