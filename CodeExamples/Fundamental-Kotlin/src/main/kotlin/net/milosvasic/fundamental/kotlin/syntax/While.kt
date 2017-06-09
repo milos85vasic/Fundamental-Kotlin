@@ -7,3 +7,11 @@ fun counter2(to: Int) {
         x++
     }
 }
+
+fun counter3(to: Int) {
+    var x = 0
+    do {
+        println("[ $x ]")
+        x++
+    } while (x <= to)
+}
