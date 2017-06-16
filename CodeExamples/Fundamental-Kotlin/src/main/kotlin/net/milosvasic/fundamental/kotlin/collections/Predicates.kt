@@ -11,6 +11,6 @@ fun `has all items positive` (items: List<Int>): Boolean {
     return items.all(check)
 }
 
-fun `get the number of positive items` (items: List<Int>): Int {
+fun `number of positive items` (items: List<Int>): Int {
     return items.count(check)
 }
