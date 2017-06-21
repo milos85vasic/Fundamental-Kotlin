@@ -1,8 +1,6 @@
 package net.milosvasic.fundamental.kotlin.idioms;
 
-/**
- * Created by mvasic on 6/6/16.
- */
+
 class Human {
     fun walk() {
         println("Walking");
