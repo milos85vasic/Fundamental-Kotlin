@@ -5,3 +5,19 @@ fun members(members: Array<String>) {
         println("[ $index ][ $value ]")
     }
 }
+
+fun members2(members: Collection<String>) {
+    for (value in members) {
+        println("[ $value ]")
+    }
+}
+
+fun letters(word: String) {
+    for (letter in word) {
+        println("[ $letter ]")
+    }
+}
+
+fun numbers(to: Int) {
+    for (number in 0..100) println("[ $number ]")
+}
