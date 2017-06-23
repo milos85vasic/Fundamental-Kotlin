@@ -1,9 +1,6 @@
 package net.milosvasic.fundamental.kotlin.basics.returns
 
-/**
- * Created by milosvasic on 6/8/16.
- */
-fun labelsExample(x: Int, y: Int) {
+fun breakingTheLoop(x: Int, y: Int) {
     myLoop@ for (a in 0..x) {
         for (b in 0..y) {
             println("[ $a ][ $b ]")

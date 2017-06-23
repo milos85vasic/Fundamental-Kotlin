@@ -1,9 +1,7 @@
 package net.milosvasic.fundamental.kotlin.basics.controll_flow
 
-/**
- * Created by milosvasic on 6/8/16.
- */
-fun whileExample() {
+
+fun conting() {
     var x = 0
     while (x < 100) {
         println("X: $x")
@@ -11,7 +9,7 @@ fun whileExample() {
     }
 }
 
-fun doWhileExample() {
+fun counting2() {
     var x = 0
     do {
         println("X: $x")

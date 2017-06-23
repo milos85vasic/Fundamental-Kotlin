@@ -1,33 +1,33 @@
 package net.milosvasic.fundamental.kotlin.basics.returns
 
-/**
- * Created by milosvasic on 6/8/16.
- */
-fun returnAtLabelsExample(ints: List<Int>) {
+fun returns1(ints: List<Int>, toBreakAt: Int) {
     ints.forEach {
-        if (it == 0) return
-        println("Item: $it")
+        item ->
+        if (item == toBreakAt) return
+        println("Item: $item")
     }
 }
 
-fun returnAtLabelsExample2(ints: List<Int>) {
-    ints.forEach myLabel@ {
-        if (it == 0) return@myLabel
-        println("Item: $it")
+fun returns2(ints: List<Int>, toBreakAt: Int) {
+    ints.forEach myLabel1@ {
+        item ->
+        if (item % 2 == 0) return@myLabel1
+        println("Item: $item")
     }
 }
 
-fun returnAtLabelsExample3(ints: List<Int>) {
+fun returns3(ints: List<Int>, toBreakAt: Int) {
     ints.forEach {
-        if (it == 0) return@forEach
-        println("Item: $it")
+        item ->
+        if (item % 2 == 0) return@forEach
+        println("Item: $item")
     }
 }
 
-fun returnAtLabelsExample4(ints: List<Int>) {
+fun returns4(ints: List<Int>, toBreakAt: Int) {
     ints.forEach(
             fun(value: Int) {
-                if (value == 0) return
+                if (value % 2 == 0) return
                 println("Item: $value")
             }
     )
