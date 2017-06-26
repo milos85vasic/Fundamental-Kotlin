@@ -1,33 +1,31 @@
 package net.milosvasic.fundamental.kotlin.classes.extensions
 
-/**
- * Created by milosvasic on 6/9/16.
- */
+
 class Parent {
     fun doSomething() {
         println("Do something...")
     }
 }
 
-class MyClass {
+class Child {
     fun Parent.doSomething() {
         this.doSomething()
-        println("And the extended part.")
+        println("And the extended it.")
     }
 
     fun Parent.doSomething(x: Int) {
         println("Extended with parameter passed")
     }
 
-    fun Parent.newStuff() {
+    fun Parent.doSomething2() {
         println("Extended with new method")
     }
 
-    fun tryExtensions(parent: Parent) {
+    fun tryout(parent: Parent) {
         with(parent) {
             doSomething()
             doSomething(5)
-            newStuff()
+            doSomething2()
         }
     }
 }

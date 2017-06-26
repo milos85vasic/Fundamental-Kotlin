@@ -1,8 +1,6 @@
 package net.milosvasic.fundamental.kotlin.classes.interfaces
 
-/**
- * Created by milosvasic on 6/9/16.
- */
+
 interface Audio {
     fun volumeUp();
     fun volumeDown();
