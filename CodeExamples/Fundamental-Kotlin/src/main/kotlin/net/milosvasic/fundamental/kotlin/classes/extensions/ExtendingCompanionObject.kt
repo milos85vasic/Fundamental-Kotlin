@@ -1,8 +1,5 @@
 package net.milosvasic.fundamental.kotlin.classes.extensions
 
-/**
- * Created by milosvasic on 6/9/16.
- */
 class HasCompanion {
     companion object {
         val a = 10

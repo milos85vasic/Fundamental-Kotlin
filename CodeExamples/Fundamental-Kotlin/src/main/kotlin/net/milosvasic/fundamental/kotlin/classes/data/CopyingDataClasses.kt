@@ -1,8 +1,6 @@
 package net.milosvasic.fundamental.kotlin.classes.data
 
-/**
- * Created by milosvasic on 6/9/16.
- */
+
 data class Person(val name: String, val age: Int){}
 
 fun tryDataClassCopying(){
