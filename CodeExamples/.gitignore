@@ -108,3 +108,4 @@ Logs/*
 credentials*.gradle
 
 samples/*
+*.iml

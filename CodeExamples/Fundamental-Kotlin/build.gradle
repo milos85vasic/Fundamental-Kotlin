@@ -7,9 +7,9 @@ buildscript {
 		}
 	}
 	dependencies {
-		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.1"
-		classpath "org.jetbrains.kotlin:kotlin-reflect:1.1.1"
-		classpath "net.milosvasic.groot:Groot:1.0.0-Beta-1"
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.51"
+		classpath "org.jetbrains.kotlin:kotlin-reflect:1.1.51"
+		classpath "net.milosvasic.groot:Groot:1.0.0-Beta-3"
 	}
 }
 
@@ -19,11 +19,11 @@ apply plugin: "groot-credentials"
 
 groot.registerRepository("http://repo.milosvasic.net/releases")
 
-groot.kotlin.version = "1.1.1"
+groot.kotlin.version = "1.1.51"
 
 final alpha = 0
 final beta = 0
-final version = 1
+final version = 2
 final secondaryVersion = 0
 final tertiaryVersion = 0
 final projectPackage = "kotlin"
