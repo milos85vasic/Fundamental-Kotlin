@@ -1,7 +1,7 @@
 # Fundamental Kotlin revised (Third Edition)
 
 - All chapter have been extended with additional content.
-- Additional chapters and new Kotlin functionalities are covered.
+- Additional chapters and new Kotlin functionalities covered.
 - More general programming theory.
 
 # Fundamental Kotlin - Second Edition
