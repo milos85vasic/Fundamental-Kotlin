@@ -1,5 +1,6 @@
 package net.milosvasic.fundamental.kotlin
 
-fun main(args: Array<String>) {
+fun main() {
+
     println("Welcome to Kotlin.")
 }

@@ -1,23 +1,10 @@
-buildscript {
-    ext.kotlin_version = '1.3.72'
-    repositories {
-        jcenter()
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
+apply plugin: 'application'
 
-repositories {
-    jcenter()
-    mavenCentral()
+application {
+    mainClassName = "net.milosvasic.fundamental.kotlin.Main"
 }
-
-apply plugin: "kotlin"
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    testCompile "org.jetbrains.kotlin:kotlin-test"
-    testCompile "org.jetbrains.kotlin:kotlin-test-junit"
+
+    // Your dependencies go here
 }
