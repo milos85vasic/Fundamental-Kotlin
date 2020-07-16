@@ -1,7 +1,7 @@
 apply plugin: 'application'
 
 application {
-    mainClassName = "net.milosvasic.fundamental.kotlin.Main"
+    mainClassName = "net.milosvasic.fundamental.kotlin.WelcomeKt"
 }
 
 dependencies {
