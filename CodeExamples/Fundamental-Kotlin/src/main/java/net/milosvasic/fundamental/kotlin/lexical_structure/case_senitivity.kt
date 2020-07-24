@@ -1,3 +1,4 @@
+package net.milosvasic.fundamental.kotlin.lexical_structure
 
 val myConstant = 0
 val myCONSTANT = 1
