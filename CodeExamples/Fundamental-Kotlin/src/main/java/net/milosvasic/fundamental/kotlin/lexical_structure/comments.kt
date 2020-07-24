@@ -16,7 +16,7 @@ package net.milosvasic.fundamental.kotlin.lexical_structure
 /*
 *   /*
 *       /*
-*           // Nested multiline comment!
+*           // Nested multi-line comment!
 *       */
 *   */
 */
