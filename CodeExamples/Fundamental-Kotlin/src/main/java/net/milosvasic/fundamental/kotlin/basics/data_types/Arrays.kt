@@ -31,5 +31,5 @@ val c = arrayOfNulls<Int>(5)
 
 // Array of integers:
 val d = intArrayOf(10, 100, 1000, 10000)
-
-fun main() = printArray(a)
+val e = arrayOf(10, 100, 1000, 10000) // 'd' and 'e' are not the same type!
+                                      // 'd' is IntArray, 'e' is Array.
