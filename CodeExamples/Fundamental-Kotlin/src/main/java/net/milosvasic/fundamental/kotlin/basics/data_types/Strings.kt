@@ -9,14 +9,22 @@ val s3 = """
         We have multiline here!
     """
 
-fun stringIterator(s: String) {
-    val iterator = s.iterator()
-    while(iterator.hasNext()) println("Character: ${iterator.next()}")
+val s4 = """
+        Raw string example ...
+        We have multiline here!
+""".trimIndent()
+
+val s5 = """
+        |Raw string example ...
+        |We have multiline here!
+""".trimMargin()
+
+fun stringIsArray(word: String) {
+
+    word.forEach {
+        println(it)
+    }
 }
 
-fun stringIterator2(s: String) {
-    for(c in s) println("Character: $c")
-}
-
-
+fun main() = stringIsArray("Elephant")
 
