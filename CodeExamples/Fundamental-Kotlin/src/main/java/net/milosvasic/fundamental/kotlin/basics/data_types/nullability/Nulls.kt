@@ -26,3 +26,12 @@ fun printer(word: String?) {
         println("Word [ $uppercase ]")
     }
 }
+
+/**
+ * Word is not null!
+ */
+fun printer2(word: String) {
+
+    val uppercase = word.toUpperCase()
+    println("Word [ $uppercase ]")
+}
