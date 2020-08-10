@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.syntax
+package net.milosvasic.fundamental.kotlin.basics.data_types.nullability
 
 /**
  * This example returns incremented value
