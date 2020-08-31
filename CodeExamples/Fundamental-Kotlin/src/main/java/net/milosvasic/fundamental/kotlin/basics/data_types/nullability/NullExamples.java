@@ -18,6 +18,7 @@ class NullExamples {
         nullStringVariable = null;
         // Calling 'length()' method will crash the application:
         int size = nullStringVariable.length();
+        System.out.println("Length is: " + size);
     }
 
     public static void main(String[] args) {
