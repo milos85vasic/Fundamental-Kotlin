@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.syntax
+package net.milosvasic.fundamental.kotlin.basics
 
 // Constants:
 // We provide type and the value:
