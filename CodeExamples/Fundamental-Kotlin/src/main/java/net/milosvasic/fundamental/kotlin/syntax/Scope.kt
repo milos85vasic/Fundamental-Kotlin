@@ -4,7 +4,7 @@ fun main() {
 
     val global = "Global"
 
-    fun scopes() {
+    fun myFunction() {
 
         val local = "Local"
 
