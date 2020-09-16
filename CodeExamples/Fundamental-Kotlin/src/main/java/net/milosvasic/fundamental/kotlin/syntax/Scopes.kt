@@ -13,7 +13,7 @@ fun main() {
         println("Global: $global")
     }
 
-    // We can access to local scope, compiler would complain:
+    // We can't access to local scope, compiler would complain:
     // println("Local: $local")
     println("Global: $global")
 }
