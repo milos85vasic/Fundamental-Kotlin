@@ -11,4 +11,14 @@ val y = 1
 // val z: Int
 
 // Variable:
-var m: Int = 0
+var z: Int = 0
+
+fun main() {
+
+    var m = 1
+    println("M is: $m")
+    m = 2
+    println("M is: $m")
+    m = 3
+    println("M is: $m")
+}
