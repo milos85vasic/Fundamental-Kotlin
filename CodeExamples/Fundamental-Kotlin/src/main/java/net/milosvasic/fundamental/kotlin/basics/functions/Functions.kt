@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.syntax
+package net.milosvasic.fundamental.kotlin.basics.functions
 
 fun sum(x: Int, y: Int): Int {
     return x + y
