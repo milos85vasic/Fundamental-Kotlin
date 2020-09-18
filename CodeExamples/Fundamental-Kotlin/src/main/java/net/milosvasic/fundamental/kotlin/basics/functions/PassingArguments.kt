@@ -1,9 +1,9 @@
 package net.milosvasic.fundamental.kotlin.basics.functions
 
-// Function accepts 2 Integer arguments and returns its multiplication
+// Function accepts 2 Integer arguments and returns its multiplication:
 fun multiply(a: Int, b: Int) = a * b
 
-// Function accepts 2 Integer arguments and returns its division
+// Function accepts 2 Integer arguments and returns its division:
 fun divide(a: Int, b: Int) = a / b
 
 // Main program function receives arguments from command line:
