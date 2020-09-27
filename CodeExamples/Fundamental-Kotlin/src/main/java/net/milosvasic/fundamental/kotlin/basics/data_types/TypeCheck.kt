@@ -18,19 +18,27 @@ fun main() {
     }
 
     /**
-     * Casts explicitly into the Double data type
+     * Casting into the Double data type
      */
+    @Throws(IllegalArgumentException::class)
     fun powerLogger(value: Any) {
 
-        val converted = value as Double
-        try {
+        val converted = when (value) {
+            is Int -> {
 
-            val pow = power(converted)
-            println("Power of $converted is: $pow")
-        } catch (e: IllegalArgumentException) {
+                value.toDouble()
+            }
+            is Double -> {
 
-            println("Error: ${e.message}")
+                value
+            }
+            else -> {
+
+                throw IllegalArgumentException("Unsupported data passed: ${value::class.simpleName}")
+            }
         }
+        val pow = power(converted)
+        println("Power of $converted is: $pow")
     }
 
     val a = 2.0
@@ -56,8 +64,14 @@ fun main() {
         println("Error: ${e.message}")
     }
 
-    powerLogger(a)
-    powerLogger(b)
-    powerLogger(c)
+    try {
+
+        powerLogger(a)
+        powerLogger(b)
+        powerLogger(c)
+    } catch (e: IllegalArgumentException) {
+
+        println("Error: ${e.message}")
+    }
 }
 
