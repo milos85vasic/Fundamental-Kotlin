@@ -41,6 +41,13 @@ fun main() {
         println("Power of $converted is: $pow")
     }
 
+    fun printIfString(a: Any) {
+
+        if (a is String) {
+            println(a) // a is automatically cast to String
+        }
+    }
+
     val a = 2.0
     val b = 3
     val c = "not a double"
