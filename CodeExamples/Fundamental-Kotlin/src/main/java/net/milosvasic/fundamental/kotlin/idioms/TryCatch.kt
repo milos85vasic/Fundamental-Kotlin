@@ -1,6 +1,6 @@
 package net.milosvasic.fundamental.kotlin.idioms
 
-import net.milosvasic.fundamental.kotlin.syntax.getCarPrice
+import net.milosvasic.fundamental.kotlin.basics.syntax.getCarPrice
 
 fun tryCatchExample() {
     val carModels = listOf("BMW", "Fiat", "Mercedes", "Opel", "Renault")

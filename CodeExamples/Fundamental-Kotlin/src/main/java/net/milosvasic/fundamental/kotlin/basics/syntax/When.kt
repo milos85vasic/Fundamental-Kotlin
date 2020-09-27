@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.syntax
+package net.milosvasic.fundamental.kotlin.basics.syntax
 
 fun recognize(what: Any) {
     when (what) {

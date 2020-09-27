@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.syntax
+package net.milosvasic.fundamental.kotlin.basics.syntax
 
 fun counter2(to: Int) {
     var x = 0

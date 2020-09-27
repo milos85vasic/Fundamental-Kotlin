@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.syntax
+package net.milosvasic.fundamental.kotlin.basics.syntax
 
 fun compare(x: Int, y: Int): Int {
     if (x > y) {
