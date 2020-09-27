@@ -18,14 +18,46 @@ fun main() {
     }
 
     /**
-     * Casts explicitly into the String data type
+     * Casts explicitly into the Double data type
      */
-    fun logger(value: Any) {
+    fun powerLogger(value: Any) {
 
-        val toPrint: String = value as String
-        println("String value: $toPrint")
+        val converted = value as Double
+        try {
+
+            val pow = power(converted)
+            println("Power of $converted is: $pow")
+        } catch (e: IllegalArgumentException) {
+
+            println("Error: ${e.message}")
+        }
     }
 
+    val a = 2.0
+    val b = 3
+    val c = "not a double"
 
+    val aa = power(a)
+    println("a power is: $aa")
+
+    try {
+        val bb = power(b)
+        println("b power is: $bb")
+    } catch (e: IllegalArgumentException) {
+
+        println("Error: ${e.message}")
+    }
+
+    try {
+        val cc = power(c)
+        println("c power is: $cc")
+    } catch (e: IllegalArgumentException) {
+
+        println("Error: ${e.message}")
+    }
+
+    powerLogger(a)
+    powerLogger(b)
+    powerLogger(c)
 }
 
