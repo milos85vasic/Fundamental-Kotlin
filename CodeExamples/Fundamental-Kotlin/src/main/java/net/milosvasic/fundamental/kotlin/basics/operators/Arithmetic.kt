@@ -18,10 +18,18 @@ fun main(){
     println(concatenation)
 
     // "-" - Subtraction:
+    val sub = c - b
+    println("c - b = $sub")
 
     // "*" - Multiplication:
+    val multi = b * c
+    println("b * c = $multi")
 
     // "/" - Division:
+    val div = 12 / c
+    println("12 / c = $div")
 
     // "%" - Modulus:
+    val mod = c % b
+    println("c % b = $mod")
 }
