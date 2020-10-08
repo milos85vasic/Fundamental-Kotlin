@@ -1,6 +1,6 @@
 package net.milosvasic.fundamental.kotlin.basics.operators
 
-fun main(){
+fun main() {
 
     val a = 1
     val b = 2
