@@ -1,12 +1,9 @@
-package net.milosvasic.fundamental.kotlin.misc
+package net.milosvasic.fundamental.kotlin.basics.operators
 
-/**
- * Created by milosvasic on 8/8/16.
- */
-data class TestEquality(val a: String, val b: Int) {
-}
+data class TestEquality(val a: String, val b: Int)
 
-fun equalityExample(){
+fun main() {
+
     val a = TestEquality("Some string", 2)
     val b = TestEquality("Some string", 2)
     val c = a
