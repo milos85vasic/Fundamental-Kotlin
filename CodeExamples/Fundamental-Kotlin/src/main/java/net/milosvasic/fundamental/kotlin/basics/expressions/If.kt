@@ -1,18 +1,19 @@
 package net.milosvasic.fundamental.kotlin.basics.expressions
 
-fun main(){
+fun main() {
 
-    fun getMemberTypeById(id: Int): String {
+    fun getMemberTypeById(id: Int) = if (id == 0) {
 
-        return if (id == 0) {
-            "Unregistered"
-        } else if (id == 1) {
-            "Registered"
-        } else if (id == 2) {
-            "Admin"
-        } else {
-            "Unknown"
-        }
+        "Unregistered"
+    } else if (id == 1) {
+
+        "Registered"
+    } else if (id == 2) {
+
+        "Admin"
+    } else {
+
+        "Unknown"
     }
 
     val ids = listOf(0, 1, 2, 3, 4)
