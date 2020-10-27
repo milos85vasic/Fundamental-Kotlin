@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.basics.syntax
+package net.milosvasic.fundamental.kotlin.basics.expressions
 
 fun main() {
 
