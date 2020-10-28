@@ -131,4 +131,14 @@ fun main() {
         }
         println()
     }
+
+    println()
+    println("Precision check:")
+
+    listOf(10, 20, 30, 40, 50, 80, 100).forEach { points ->
+
+        println("Points: $points, precision: ")
+        precisionCheck(points)
+        println()
+    }
 }
