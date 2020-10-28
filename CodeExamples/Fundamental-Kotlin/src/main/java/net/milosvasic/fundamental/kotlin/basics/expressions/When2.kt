@@ -104,4 +104,14 @@ fun main() {
             println("$it: ${e.message}")
         }
     }
+
+    val user1 = "john.smith"
+    val user2 = "dr.cooper"
+    val admin = "root"
+    val guest = "guest"
+
+    val systemUsers = mapOf(user1 to 0, user2 to 0, admin to 1)
+    val challenges = listOf(user1, user2, guest, admin)
+
+
 }
