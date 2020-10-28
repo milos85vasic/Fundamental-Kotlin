@@ -113,5 +113,22 @@ fun main() {
     val systemUsers = mapOf(user1 to 0, user2 to 0, admin to 1)
     val challenges = listOf(user1, user2, guest, admin)
 
+    println()
+    println("Checking users:")
+    challenges.forEach {
 
+        var userType = -1
+        systemUsers[it]?.let { type ->
+            userType = type
+        }
+        println("Checking user: $it")
+        try {
+
+            validateUserType(userType)
+        } catch (e: IllegalArgumentException) {
+
+            println(e.message)
+        }
+        println()
+    }
 }
