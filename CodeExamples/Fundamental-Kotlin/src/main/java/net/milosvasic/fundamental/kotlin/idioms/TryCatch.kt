@@ -1,13 +1,22 @@
 package net.milosvasic.fundamental.kotlin.idioms
 
-import net.milosvasic.fundamental.kotlin.basics.syntax.getCarPrice
+fun main() {
 
-fun tryCatchExample() {
-    val carModels = listOf("BMW", "Fiat", "Mercedes", "Opel", "Renault")
-    for (model in carModels) {
+    fun getCarPrice(model: String): Int {
+
+        return when (model) {
+            "Mercedes" -> 100000
+            "BMW" -> 95000
+            "Opel" -> 82000
+            else -> throw IllegalArgumentException("We do not recognize this model.")
+        }
+    }
+
+    listOf("BMW", "Fiat", "Mercedes", "Opel", "Renault").forEach { model ->
+
         try {
             println("$model has a price of ${getCarPrice(model)}")
-        } catch(e: Exception) {
+        } catch (e: Exception) {
             println(e.message)
         }
     }
