@@ -9,9 +9,9 @@ fun main() {
             is Int -> println("Number")
             is String -> println("String")
             is Boolean -> if (what) {
-                println("Boolean: true")
+                println("Boolean, true")
             } else {
-                println("Boolean: false")
+                println("Boolean, false")
             }
             else -> println("Unknown")
         }
@@ -80,5 +80,15 @@ fun main() {
         }
     }
 
+    println("Data type recognizer:")
+    listOf(
+            "Hi", "there",
+            1, 10, 1.10,
+            5 == "5".toInt()
+    ).forEach {
 
+        println("'$it' is:")
+        dataTypeRecognizer(it)
+        println()
+    }
 }
