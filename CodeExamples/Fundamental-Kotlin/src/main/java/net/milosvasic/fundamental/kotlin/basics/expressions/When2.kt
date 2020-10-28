@@ -91,4 +91,17 @@ fun main() {
         dataTypeRecognizer(it)
         println()
     }
+
+    println("Car prices:")
+    listOf("Mercedes", "BMW", "Opel", "Fiat").forEach {
+
+        try {
+
+            val price = getCarPrice(it)
+            println("Price for $it car is: $price")
+        } catch (e: IllegalArgumentException) {
+
+            println("$it: ${e.message}")
+        }
+    }
 }
