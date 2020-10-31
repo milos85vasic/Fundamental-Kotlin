@@ -36,5 +36,5 @@ fun main() {
 
     val strategy = getCalculationStrategy( 0)
     val result = strategy(a, b)
-    println("Strategy result: $result")
+    println("Calculation result is: $result")
 }
