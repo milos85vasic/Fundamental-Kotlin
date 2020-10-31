@@ -19,4 +19,22 @@ fun main() {
 
     println("calculate(a, b, ::sum) == $calculateSum")
     println("calculate(a, b, ::diff) == $calculateDiff")
+
+    fun getCalculationStrategies() = listOf(::sum, ::diff)
+
+    @Throws(IllegalArgumentException::class)
+    fun getCalculationStrategy(strategyId: Int): (Int, Int) -> Int {
+
+        val strategies = getCalculationStrategies()
+        if (strategyId >= strategies.size) {
+
+            throw IllegalArgumentException("No strategy available for id: $strategyId")
+        }
+        return strategies[strategyId]
+    }
+
+
+    val strategy = getCalculationStrategy( 0)
+    val result = strategy(a, b)
+    println("Strategy result: $result")
 }
