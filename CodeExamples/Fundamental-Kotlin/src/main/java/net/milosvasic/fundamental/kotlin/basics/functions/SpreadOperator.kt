@@ -24,4 +24,7 @@ fun main() {
     sumAndMultiply(multiply, 1, 2)
     sumAndMultiply(multiply, 1, 2, 3)
     sumAndMultiply(multiply, 1, 2, 3, 4)
+
+    val numbers = intArrayOf(1, 2, 3, 4, 5)
+    sumAndMultiply(multiply, *numbers)
 }
