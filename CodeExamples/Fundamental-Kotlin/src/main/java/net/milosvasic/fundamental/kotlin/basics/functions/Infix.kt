@@ -6,7 +6,7 @@ fun main() {
 
     infix fun Double.powerPI(x: Int): Double {
 
-        return this.pow(x + Math.PI)
+        return this.pow(Math.PI)
     }
 
     val array = arrayOf(2.0, 4.0, 6.0, 8.0, 10.0)
