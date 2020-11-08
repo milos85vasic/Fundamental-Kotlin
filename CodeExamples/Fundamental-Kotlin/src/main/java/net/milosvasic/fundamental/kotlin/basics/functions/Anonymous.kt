@@ -2,19 +2,17 @@ package net.milosvasic.fundamental.kotlin.basics.functions
 
 fun main() {
 
-    fun example1(){
+    val f1 = fun(x: Int, y: Int): Int {
 
-        val f = fun(x: Int, y: Int): Int = x + y
-        f.invoke(1, 2)
-
+        return x + y
     }
 
-    fun example2(){
+    val f2 = fun(x: Int, y: Int) = x + y
 
-        val f = fun(x: Int, y: Int): Int {
-            return x + y
-        }
-        val z = 10 + f.invoke(100, 1000)
 
-    }
+    val x = f2(1, 2)
+    val y = f1(3, 4)
+
+    println("x: $x")
+    println("y: $y")
 }
