@@ -34,7 +34,6 @@ fun main() {
     val g = calculator2(a, b, 0)
     val h = calculator2(a, b, 1)
 
-
     println("$a + $b with lambda1: $c")
     println("$a + $b with lambda2: $d")
     println("calculator with $a, $b and lambda1: $e")
