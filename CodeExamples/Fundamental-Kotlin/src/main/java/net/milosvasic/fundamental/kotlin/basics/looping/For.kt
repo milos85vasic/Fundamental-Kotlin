@@ -46,10 +46,10 @@ fun main() {
         )
     }
 
-    fun players(players: Collection<String>) {
+    fun players(players: List<String>) {
 
         players.forEachIndexed { index, item ->
-            println("[ $index ] ${item.capitalize()}")
+            println("Player $index: ${item.capitalize()}")
         }
     }
 
@@ -57,4 +57,7 @@ fun main() {
 
     val cities = listOf("Belgrade", "Rome", "Moscow", "New York")
     citiesKt(cities)
+
+    val players = listOf("John Smith", "John Doe", "Peter Pan")
+    players(players)
 }
