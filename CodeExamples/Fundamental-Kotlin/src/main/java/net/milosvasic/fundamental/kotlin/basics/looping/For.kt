@@ -1,5 +1,7 @@
 package net.milosvasic.fundamental.kotlin.basics.looping
 
+import java.util.function.Consumer
+
 fun main() {
 
     fun counter(to: Int) {
@@ -32,6 +34,16 @@ fun main() {
 
             println("City: ${city.capitalize()}")
         }
+    }
+
+    fun citiesKt2(clubs: List<String>) {
+
+        clubs.forEach(
+
+                Consumer { city ->
+                    println("City: ${city.capitalize()}")
+                }
+        )
     }
 
     fun players(players: Collection<String>) {
