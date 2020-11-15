@@ -11,6 +11,13 @@ fun main() {
         }
     }
 
+    fun counter2(to: Int) {
+
+        for (x in 0 until to) {
+            println("x: $x ")
+        }
+    }
+
     fun cars(cars: List<String>) {
 
         for (index in cars.indices) {
@@ -50,6 +57,7 @@ fun main() {
     }
 
     counter(5)
+    counter2(5)
 
     val cities = listOf("Belgrade", "Rome", "Moscow", "New York")
     citiesKt(cities)
