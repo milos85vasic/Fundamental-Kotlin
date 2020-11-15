@@ -5,26 +5,32 @@ fun main() {
     fun counter(to: Int) {
 
         for (x in 0..to) {
-            println("[ $x ]")
+
+            println("x: $x ")
         }
     }
 
-    fun cars(cars: Collection<String>) {
+    fun cars(cars: List<String>) {
 
-        for (c in cars.indices) {
-            // Do something with index of an element.
+        for (index in cars.indices) {
+
+            println("Car '${cars[index]}' index is: $index")
         }
     }
 
-    fun clubs(clubs: Collection<String>) {
+    fun cities(cities: List<String>) {
 
-        for (c in clubs) println("Club [ ${c.capitalize()} ]")
+        for (city in cities) {
+
+            println("City: ${city.capitalize()}")
+        }
     }
 
-    fun clubs2(clubs: Collection<String>) {
+    fun citiesKt(clubs: List<String>) {
 
-        clubs.forEach { c ->
-            println("Club [ ${c.capitalize()} ]")
+        clubs.forEach { city ->
+
+            println("City: ${city.capitalize()}")
         }
     }
 
@@ -34,4 +40,9 @@ fun main() {
             println("[ $index ] ${item.capitalize()}")
         }
     }
+
+    counter(5)
+
+    val cities = listOf("Belgrade", "Rome", "Moscow", "New York")
+    citiesKt(cities)
 }
