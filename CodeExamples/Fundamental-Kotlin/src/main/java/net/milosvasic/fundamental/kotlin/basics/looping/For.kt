@@ -7,7 +7,6 @@ fun main() {
     fun counter(to: Int) {
 
         for (x in 0..to) {
-
             println("x: $x ")
         }
     }
@@ -15,7 +14,6 @@ fun main() {
     fun cars(cars: List<String>) {
 
         for (index in cars.indices) {
-
             println("Car '${cars[index]}' index is: $index")
         }
     }
@@ -23,7 +21,6 @@ fun main() {
     fun cities(cities: List<String>) {
 
         for (city in cities) {
-
             println("City: ${city.capitalize()}")
         }
     }
@@ -31,7 +28,6 @@ fun main() {
     fun citiesKt(clubs: List<String>) {
 
         clubs.forEach { city ->
-
             println("City: ${city.capitalize()}")
         }
     }
