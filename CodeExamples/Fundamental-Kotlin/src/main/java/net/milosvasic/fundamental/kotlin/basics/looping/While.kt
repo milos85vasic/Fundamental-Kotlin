@@ -6,7 +6,7 @@ fun main() {
 
         var x = 0
         while (x <= to) {
-            println("X: $x")
+            println("x: $x")
             x++
         }
     }
