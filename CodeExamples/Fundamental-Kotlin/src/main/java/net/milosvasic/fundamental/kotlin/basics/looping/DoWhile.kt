@@ -17,5 +17,6 @@ fun main() {
 
         println("Counting to: $it")
         counter(it)
+        println()
     }
 }
