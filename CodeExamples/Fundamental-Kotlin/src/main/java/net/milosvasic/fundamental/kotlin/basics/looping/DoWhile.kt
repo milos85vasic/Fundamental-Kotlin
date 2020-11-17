@@ -3,9 +3,11 @@ package net.milosvasic.fundamental.kotlin.basics.looping
 fun main() {
 
     fun counter(to: Int) {
+
         var x = 0
         do {
-            println("[ $x ]")
+
+            println("x: $x")
             x++
         } while (x <= to)
     }
