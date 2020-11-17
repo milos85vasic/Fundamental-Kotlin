@@ -12,5 +12,10 @@ fun main() {
         } while (x <= to)
     }
 
-    counter(5)
+    val numbers = intArrayOf(0, 1, 2)
+    numbers.forEach {
+
+        println("Counting to: $it")
+        counter(it)
+    }
 }
