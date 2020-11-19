@@ -5,6 +5,14 @@ fun main() {
     val numbers = listOf(2, 4, 6)
     val words = listOf("Some", "Word")
 
+    val number = numbers[0]
+    val word = words[1]
+    val lastNumber = numbers[numbers.lastIndex]
+
+    println("Number: $number")
+    println("Word: $word")
+    println("Last number: $lastNumber")
+
     val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
     val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
