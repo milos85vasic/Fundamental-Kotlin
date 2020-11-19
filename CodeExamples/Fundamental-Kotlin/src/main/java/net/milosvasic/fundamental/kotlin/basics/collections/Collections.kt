@@ -18,10 +18,7 @@ fun main() {
      * Immutable sets
      */
     val immutableSet = setOf(2, 2, 3) // It only has members 2 and 3.
-
-    fun printSet() {
-        immutableSet.forEach(::println) // Outputs 2 and 3 (:: meaning direct access to reference) immutableSet.forEach(::println)
-    }
+    immutableSet.forEach(::println) // Will output: 2 and 3.
 
     /**
      * Mutable lists
