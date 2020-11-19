@@ -2,23 +2,14 @@ package net.milosvasic.fundamental.kotlin.basics.collections
 
 fun main() {
 
-    /**
-     * Immutable lists
-     */
-    val immutableList = listOf(2, 4, 6)
-    val immutableList2 = listOf("Some", "Word")
+    val numbers = listOf(2, 4, 6)
+    val words = listOf("Some", "Word")
 
-    /**
-     * Immutable maps
-     */
-    val immutableMap = mapOf("something" to 1, "else" to 2)
-    val immutableMap2 = mapOf(Pair(1, "Plane"), Pair(2, "Car"))
+    val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
+    val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
-    /**
-     * Immutable sets
-     */
-    val immutableSet = setOf(2, 2, 3) // It only has members 2 and 3.
-    immutableSet.forEach(::println) // Will output: 2 and 3.
+    val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
+    numbersSet.forEach(::println) // Will output: 2 and 3
 
     /**
      * Mutable lists
