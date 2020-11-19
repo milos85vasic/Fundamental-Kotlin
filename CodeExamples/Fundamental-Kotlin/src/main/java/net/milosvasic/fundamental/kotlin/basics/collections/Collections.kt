@@ -13,6 +13,21 @@ fun main() {
     println("Word: $word")
     println("Last number: $lastNumber")
 
+    val numbersListSize = numbers.size
+    val wordsListSize = words.size
+
+    println("Numbers list size is: $numbersListSize")
+    println("Words list size is: $wordsListSize")
+
+    for (x in 0..10) {
+
+        if (numbers.contains(x)){
+            println("Numbers collection contains: $x")
+        } else {
+            println("Numbers collection does not contain: $x")
+        }
+    }
+
     val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
     val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
