@@ -1,21 +1,28 @@
 package net.milosvasic.fundamental.kotlin.basics.collections
 
+lateinit var doubles: List<Double>
+
 fun main() {
 
     val numbers = listOf(2, 4, 6)
+    doubles = listOf(3.14, 2.16, 1.0)
     val words = listOf("Some", "Word")
 
     val number = numbers[0]
     val word = words[1]
+    val double = doubles[2]
     val lastNumber = numbers[numbers.lastIndex]
 
     println("Number: $number")
     println("Word: $word")
+    println("Double: $double")
     println("Last number: $lastNumber")
 
+    val doublesListSize = doubles.size
     val numbersListSize = numbers.size
     val wordsListSize = words.size
 
+    println("Doubles list size is: $doublesListSize")
     println("Numbers list size is: $numbersListSize")
     println("Words list size is: $wordsListSize")
 
