@@ -35,6 +35,14 @@ fun main() {
         }
     }
 
+    val toCheck = listOf(6, 4, 2)
+    val toCheck2 = listOf(1, 3, 5)
+    val toCheck3 = listOf(4, 6, 4)
+
+    println("$toCheck in $numbers: ${numbers.containsAll(toCheck)}")
+    println("$toCheck2 in $numbers: ${numbers.containsAll(toCheck2)}")
+    println("$toCheck3 in $numbers: ${numbers.containsAll(toCheck3)}")
+
     val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
     val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
