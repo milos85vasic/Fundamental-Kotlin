@@ -43,6 +43,16 @@ fun main() {
     println("$toCheck2 in $numbers: ${numbers.containsAll(toCheck2)}")
     println("$toCheck3 in $numbers: ${numbers.containsAll(toCheck3)}")
 
+    numbers.forEach {
+
+        val position = numbers.indexOf(it)
+        println("Position of $it in $numbers is: $position")
+    }
+
+    val emptyList = listOf<Int>()
+    println("Is 'emptyList' list empty: ${emptyList.isEmpty()}")
+    println("Is 'numbers' list full: ${numbers.isNotEmpty()}")
+
     val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
     val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
