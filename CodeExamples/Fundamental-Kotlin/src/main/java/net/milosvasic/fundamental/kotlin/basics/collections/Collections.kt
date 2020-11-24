@@ -56,6 +56,19 @@ fun main() {
     val slice = numbers.subList(0, 2)
     println("Slice: $slice")
 
+    val indices = numbers.indices
+    indices.forEach {
+
+        println("Index: $it -> ${numbers[it]}")
+    }
+
+    val iterator = numbers.iterator()
+    while (iterator.hasNext()) {
+
+        val item = iterator.next()
+        println("Number: $item")
+    }
+
     val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
     val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
