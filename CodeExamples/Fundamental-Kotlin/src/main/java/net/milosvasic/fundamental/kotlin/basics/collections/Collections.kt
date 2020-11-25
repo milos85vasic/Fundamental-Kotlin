@@ -72,6 +72,11 @@ fun main() {
     val userIds = mapOf("john.smith" to 1, "john.doe" to 2)
     val userCredentials = mapOf(Pair("john.smith", "12345"), Pair("john.doe", "24680"))
 
+    val user = "john.smith"
+    val id = userIds[user]
+    val credentials = userCredentials[user]
+    println("User: $user, Id: $id, Credentials: $credentials")
+
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
 
