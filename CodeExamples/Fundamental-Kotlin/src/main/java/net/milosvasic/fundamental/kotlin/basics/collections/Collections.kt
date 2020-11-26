@@ -77,6 +77,8 @@ fun main() {
     val credentials = userCredentials[user]
     println("User: $user, Id: $id, Credentials: $credentials")
 
+    println("Users count in the system is: ${userIds.size}")
+
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
 
