@@ -79,6 +79,27 @@ fun main() {
 
     println("Users count in the system is: ${userIds.size}")
 
+    listOf(user, "guest", "john.doe").forEach {
+
+        val hasUser = userCredentials.containsKey(it)
+        if (hasUser) {
+            println("$it is in the system")
+        } else {
+            println("$it is not in the system")
+        }
+    }
+
+    val wordPairs = mapOf("Hello" to "World", "Lorem" to "Ipsum")
+    listOf("Elephant", "Hello", "World", "Car").forEach {
+
+        val containsWord = wordPairs.containsValue(it)
+        if (containsWord) {
+            println("$wordPairs contains value $it")
+        } else {
+            println("$wordPairs does not contain value $it")
+        }
+    }
+
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
 
