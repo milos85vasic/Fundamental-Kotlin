@@ -100,6 +100,18 @@ fun main() {
         }
     }
 
+    val maps = listOf(mapOf(), wordPairs)
+    maps.forEach {
+
+        if(it.isNotEmpty()) {
+
+            println("Map: $it")
+        } else {
+
+            println("Map: empty")
+        }
+    }
+
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
 
