@@ -119,6 +119,13 @@ fun main() {
                 println("Smith: ${it.key}")
             }
 
+    userCredentials
+            .filterValues { it.toInt() > 20 * 1000 }
+            .forEach {
+
+                println("User ${it.key}, Id: ${it.value}")
+            }
+
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
 
