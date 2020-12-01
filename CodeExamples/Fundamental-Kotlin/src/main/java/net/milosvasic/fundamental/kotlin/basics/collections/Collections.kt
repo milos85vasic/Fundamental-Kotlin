@@ -28,7 +28,7 @@ fun main() {
 
     for (x in 0..10) {
 
-        if (numbers.contains(x)){
+        if (numbers.contains(x)) {
             println("Numbers collection contains: $x")
         } else {
             println("Numbers collection does not contain: $x")
@@ -103,7 +103,7 @@ fun main() {
     val maps = listOf(mapOf(), wordPairs)
     maps.forEach {
 
-        if(it.isNotEmpty()) {
+        if (it.isNotEmpty()) {
 
             println("Map: $it")
         } else {
@@ -111,6 +111,13 @@ fun main() {
             println("Map: empty")
         }
     }
+
+    userCredentials
+            .filterKeys { it.contains("smith") }
+            .forEach {
+
+                println("Smith: ${it.key}")
+            }
 
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
@@ -125,7 +132,7 @@ fun main() {
     /**
      * It is mutable, let’s change it!
      */
-    fun changeMutable(){
+    fun changeMutable() {
         // We can also remove some members.
         mutableList2.remove("Word")
 
@@ -149,7 +156,7 @@ fun main() {
     /**
      * Let's chane it!
      */
-    fun changeMutable2(){
+    fun changeMutable2() {
         mutableSet.add(1)
         mutableSet.add(4)
         mutableSet.add(5)
@@ -165,7 +172,7 @@ fun main() {
     /**
      * Access to the first list element.
      */
-    fun getListElement() : Int {
+    fun getListElement(): Int {
         // Access to element at first position:
         return mutableList[0]
     }
@@ -173,23 +180,23 @@ fun main() {
     /**
      * Access to map element.
      */
-    fun getMapElement() : Int? {
+    fun getMapElement(): Int? {
         // We get element mapped to "something” key
         // Since collection may or may not contain element with the key
         // we will return Int?
         return mutableMap["something"]
     }
 
-    fun printCollections(){
+    fun printCollections() {
 
         mutableList.forEach { x -> println(x) } // or (conversion of lambda to reference) mutableList.forEach(::doSomething)
         // if we need index for each element:
-        mutableList.forEachIndexed {
-            index, item -> println("$index, $item")
+        mutableList.forEachIndexed { index, item ->
+            println("$index, $item")
         }
         // or we can apply filter if needed:
         mutableList
-                .filter { x -> x >= 4 } .forEach(::println)
+                .filter { x -> x >= 4 }.forEach(::println)
 
     }
 }
