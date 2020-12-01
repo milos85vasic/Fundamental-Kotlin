@@ -135,6 +135,13 @@ fun main() {
         println("User matched: $key, Id: $value")
     }
 
+    userCredentials
+            .filterNot { it.key.contains("doe") }
+            .forEach {
+
+                println("User '${it.key}' does not contain 'doe'")
+            }
+
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
 
