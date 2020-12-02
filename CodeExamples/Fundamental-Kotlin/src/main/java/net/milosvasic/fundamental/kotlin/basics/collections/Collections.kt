@@ -143,18 +143,10 @@ fun main() {
             }
 
     val mix = userCredentials + mapOf("somebody.else" to "11111", "lorem.ipsum" to "22222")
-    println("'+': ")
-    mix.forEach { (key, value) ->
+    println("'+': $mix")
 
-        println("User: $key, Id: $value")
-    }
-
-    val diff = mix - userCredentials
-    println("'-': ")
-    diff.forEach { (key, value) ->
-
-        println("User: $key, Id: $value")
-    }
+    val diff = mix - userCredentials.keys
+    println("'-': $diff")
 
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println) // Will output: 2 and 3
