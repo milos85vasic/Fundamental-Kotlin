@@ -159,6 +159,12 @@ fun main() {
     println("First: $first")
     println("Last: $last")
 
+    val cars = setOf("Fiat", "Bmw", "Audi", "Porsche", "Renault")
+    val findFirst = cars.first { it.length == 3 }
+    val findLast = cars.last { it.startsWith("Por") }
+    println("First car that has three letters is: $findFirst")
+    println("Last car which name starts with 'Por': $findLast")
+
     /**
      * Mutable lists
      */
