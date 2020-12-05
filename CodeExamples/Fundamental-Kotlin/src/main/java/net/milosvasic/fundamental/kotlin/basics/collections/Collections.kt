@@ -165,6 +165,15 @@ fun main() {
     println("First car that has three letters is: $findFirst")
     println("Last car which name starts with 'Por': $findLast")
 
+    var findFirstOrNull = cars.firstOrNull { it.length == 3 }
+    var findLastOrNull = cars.lastOrNull { it.startsWith("Por") }
+    println("First car that has three letters is: $findFirstOrNull")
+    println("Last car which name starts with 'Por': $findLastOrNull")
+    findFirstOrNull = cars.firstOrNull { it.length == 10 }
+    findLastOrNull = cars.lastOrNull { it.startsWith("Cry") }
+    println("First car that has ten letters is: $findFirstOrNull")
+    println("Last car which name starts with 'Cry': $findLastOrNull")
+
     /**
      * Mutable lists
      */
