@@ -173,6 +173,10 @@ fun main() {
     findLastOrNull = cars.lastOrNull { it.startsWith("Cry") }
     println("First car that has ten letters is: $findFirstOrNull")
     println("Last car which name starts with 'Cry': $findLastOrNull")
+    findFirstOrNull = cars.find { it.length == 4 }
+    findLastOrNull = cars.findLast { it.startsWith("A") }
+    println("First car that has four letters is: $findFirstOrNull")
+    println("Last car which name starts with 'A': $findLastOrNull")
 
     /**
      * Mutable lists
