@@ -151,8 +151,13 @@ fun main() {
     val numbersSet = setOf(2, 2, 3) // It only has members 2 and 3, no duplicates
     numbersSet.forEach(::println)   // Will output: 2 and 3
 
-    val first = numbersSet.elementAt(0)
+    var first = numbersSet.elementAt(0)
     println("First set element is: $first")
+
+    first = numbersSet.first()
+    val last = numbersSet.last()
+    println("First: $first")
+    println("Last: $last")
 
     /**
      * Mutable lists
