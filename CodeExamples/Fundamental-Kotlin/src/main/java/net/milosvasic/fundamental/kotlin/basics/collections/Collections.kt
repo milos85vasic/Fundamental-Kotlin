@@ -178,6 +178,13 @@ fun main() {
     println("First car that has four letters is: $findFirstOrNull")
     println("Last car which name starts with 'A': $findLastOrNull")
 
+    for (x in 0..5) {
+
+        val random = cars.random()
+        println("Random chosen car model: $random")
+    }
+
+
     /**
      * Mutable lists
      */
