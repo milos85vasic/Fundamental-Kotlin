@@ -205,6 +205,19 @@ fun main() {
         }
     }
 
+    listOf(
+        setOf(),
+        setOf(""),
+        cars
+    ).forEach {
+
+        if (it.isEmpty()){
+            println("Set: empty")
+        } else {
+            println("Set: $it")
+        }
+    }
+
     /**
      * Mutable lists
      */
