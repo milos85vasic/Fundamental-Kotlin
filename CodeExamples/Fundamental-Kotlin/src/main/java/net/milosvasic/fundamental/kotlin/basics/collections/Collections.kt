@@ -113,18 +113,18 @@ fun main() {
     }
 
     userCredentials
-            .filterKeys { it.contains("smith") }
-            .forEach {
+        .filterKeys { it.contains("smith") }
+        .forEach {
 
-                println("Smith: ${it.key}")
-            }
+            println("Smith: ${it.key}")
+        }
 
     userCredentials
-            .filterValues { it.toInt() > 20 * 1000 }
-            .forEach {
+        .filterValues { it.toInt() > 20 * 1000 }
+        .forEach {
 
-                println("User ${it.key}, Id: ${it.value}")
-            }
+            println("User ${it.key}, Id: ${it.value}")
+        }
 
     userCredentials.filter {
 
@@ -136,11 +136,11 @@ fun main() {
     }
 
     userCredentials
-            .filterNot { it.key.contains("doe") }
-            .forEach {
+        .filterNot { it.key.contains("doe") }
+        .forEach {
 
-                println("User '${it.key}' does not contain 'doe'")
-            }
+            println("User '${it.key}' does not contain 'doe'")
+        }
 
     val mix = userCredentials + mapOf("somebody.else" to "11111", "lorem.ipsum" to "22222")
     println("'+': $mix")
@@ -188,6 +188,22 @@ fun main() {
     val hasVolvo = cars.contains("Volvo")
     println("Has Renault: $hasRenault")
     println("Has Volvo: $hasVolvo")
+
+    val checking = listOf(
+
+        listOf("Renault", "Bmw"),
+        listOf("Mercedes", "Bmw")
+    )
+    checking.forEach { check ->
+
+        val result = cars.containsAll(check)
+        if (result) {
+
+            println("$check is in $cars")
+        } else {
+            println("$check is NOT in $cars")
+        }
+    }
 
     /**
      * Mutable lists
@@ -263,7 +279,7 @@ fun main() {
         }
         // or we can apply filter if needed:
         mutableList
-                .filter { x -> x >= 4 }.forEach(::println)
+            .filter { x -> x >= 4 }.forEach(::println)
 
     }
 }
