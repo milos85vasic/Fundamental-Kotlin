@@ -184,6 +184,10 @@ fun main() {
         println("Random chosen car model: $random")
     }
 
+    val hasRenault = cars.contains("Renault")
+    val hasVolvo = cars.contains("Volvo")
+    println("Has Renault: $hasRenault")
+    println("Has Volvo: $hasVolvo")
 
     /**
      * Mutable lists
