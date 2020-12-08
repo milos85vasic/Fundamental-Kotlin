@@ -218,6 +218,16 @@ fun main() {
         }
     }
 
+    cars.filter { it.length > 3 }.forEach {
+
+        println("Car (name length > 3): $it")
+    }
+
+    cars.filterNot { it.length > 3 }.forEach {
+
+        println("Car (name length <= 3): $it")
+    }
+
     /**
      * Mutable lists
      */
