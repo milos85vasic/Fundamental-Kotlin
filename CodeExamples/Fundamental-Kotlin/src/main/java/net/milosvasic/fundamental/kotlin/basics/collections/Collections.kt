@@ -235,6 +235,16 @@ fun main() {
     val mutableList2 = mutableListOf("Some", "Word")
     val mutableList3 = mutableListOf<String>()
 
+    val setA = setOf("Hello", "World", "Who")
+    val setB = setOf("Who", "Are", "You")
+
+    val setC = setA + setB
+    val setD = setC - setA
+
+    println("$setA + $setB = $setC")
+    println("$setC + $setA = $setD")
+
+
     /**
      * It is mutable, let’s change it!
      */
