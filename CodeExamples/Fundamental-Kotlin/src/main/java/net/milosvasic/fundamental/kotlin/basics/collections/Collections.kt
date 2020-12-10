@@ -252,9 +252,9 @@ fun main() {
     mutableList.addAll(listOf(3, 5, 7))
 
     mutableList2.add(0, "New")
-    mutableList3.addAll(0, listOf("Hello", "World"))
-    mutableList3.add("Another")
-    mutableList3.add("One")
+    mutableList2.addAll(0, listOf("Hello", "World"))
+    mutableList2.add("Another")
+    mutableList2.add("One")
 
     mutableMap["something"] = -1
     mutableMap["new"] = 3
@@ -263,18 +263,25 @@ fun main() {
     mutableSet.addAll(listOf(2, 2, 4))
     mutableSet.add(5)
 
+    mutableList.forEach {
+        println("Number: $it")
+    }
+    mutableList2.forEach {
+        println("Word: $it")
+    }
+    mutableMap.forEach { (t, u) ->
+        println("String to Int: $t :: $u")
+    }
+    mutableMap2.forEach { (t, u) ->
+        println("Int to String: $t :: $u")
+    }
+    mutableSet.forEach {
+        println("Unique number: $it")
+    }
+
+
     // We can also remove some members.
     mutableList2.remove("Word")
-
-    // or add
-    mutableList3.add("Car")
-    mutableList2.add("Plane")
-    mutableList2.addAll(mutableList3)
-
-    mutableSet.add(1)
-    mutableSet.add(4)
-    mutableSet.add(5)
-    mutableSet.add(6)
 
     // We remove all members that are > 2
     mutableSet.removeIf { x -> x > 2 }
