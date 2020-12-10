@@ -237,9 +237,31 @@ fun main() {
     println("$setA + $setB = $setC")
     println("$setC + $setA = $setD")
 
+    // == Mutable collections == //
+
     val mutableList = mutableListOf(2, 4, 6)
     val mutableList2 = mutableListOf("Some", "Word")
     val mutableList3 = mutableListOf<String>()
+
+    val mutableMap = mutableMapOf("something" to 1, "else" to 2)
+    val mutableMap2 = mutableMapOf(Pair(1, "Plane"), Pair(2, "Car"))
+
+    val mutableSet = mutableSetOf(2, 2, 3)
+
+    mutableList.add(3)
+    mutableList.addAll(listOf(3, 5, 7))
+
+    mutableList2.add(0, "New")
+    mutableList3.addAll(0, listOf("Hello", "World"))
+    mutableList3.add("Another")
+    mutableList3.add("One")
+
+    mutableMap["something"] = -1
+    mutableMap["new"] = 3
+    mutableMap2.putAll(mapOf(1 to "Train", 3 to "Boat"))
+
+    mutableSet.addAll(listOf(2, 2, 4))
+    mutableSet.add(5)
 
     // We can also remove some members.
     mutableList2.remove("Word")
@@ -248,11 +270,6 @@ fun main() {
     mutableList3.add("Car")
     mutableList2.add("Plane")
     mutableList2.addAll(mutableList3)
-
-    val mutableMap = mutableMapOf("something" to 1, "else" to 2)
-    val mutableMap2 = mutableMapOf(Pair(1, "Plane"), Pair(2, "Car"))
-
-    val mutableSet = mutableSetOf(2, 2, 3)
 
     mutableSet.add(1)
     mutableSet.add(4)
