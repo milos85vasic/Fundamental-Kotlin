@@ -263,22 +263,13 @@ fun main() {
     mutableSet.addAll(listOf(2, 2, 4))
     mutableSet.add(5)
 
-    mutableList.forEach {
-        println("Number: $it")
-    }
-    mutableList2.forEach {
-        println("Word: $it")
-    }
-    mutableMap.forEach { (t, u) ->
-        println("String to Int: $t :: $u")
-    }
-    mutableMap2.forEach { (t, u) ->
-        println("Int to String: $t :: $u")
-    }
-    mutableSet.forEach {
-        println("Unique number: $it")
-    }
+    println(mutableList)
+    println(mutableList2)
 
+    println(mutableMap)
+    println(mutableMap2)
+
+    println(mutableSet)
 
     // We can also remove some members.
     mutableList2.remove("Word")
