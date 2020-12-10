@@ -228,13 +228,6 @@ fun main() {
         println("Car (name length <= 3): $it")
     }
 
-    /**
-     * Mutable lists
-     */
-    val mutableList = mutableListOf(2, 4, 6)
-    val mutableList2 = mutableListOf("Some", "Word")
-    val mutableList3 = mutableListOf<String>()
-
     val setA = setOf("Hello", "World", "Who")
     val setB = setOf("Who", "Are", "You")
 
@@ -244,76 +237,29 @@ fun main() {
     println("$setA + $setB = $setC")
     println("$setC + $setA = $setD")
 
+    val mutableList = mutableListOf(2, 4, 6)
+    val mutableList2 = mutableListOf("Some", "Word")
+    val mutableList3 = mutableListOf<String>()
 
-    /**
-     * It is mutable, let’s change it!
-     */
-    fun changeMutable() {
-        // We can also remove some members.
-        mutableList2.remove("Word")
+    // We can also remove some members.
+    mutableList2.remove("Word")
 
-        // or add
-        mutableList3.add("Car")
-        mutableList2.add("Plane")
-        mutableList2.addAll(mutableList3)
-    }
+    // or add
+    mutableList3.add("Car")
+    mutableList2.add("Plane")
+    mutableList2.addAll(mutableList3)
 
-    /**
-     * Mutable maps
-     */
     val mutableMap = mutableMapOf("something" to 1, "else" to 2)
     val mutableMap2 = mutableMapOf(Pair(1, "Plane"), Pair(2, "Car"))
 
-    /**
-     * Mutable sets
-     */
     val mutableSet = mutableSetOf(2, 2, 3)
 
-    /**
-     * Let's chane it!
-     */
-    fun changeMutable2() {
-        mutableSet.add(1)
-        mutableSet.add(4)
-        mutableSet.add(5)
-        mutableSet.add(6)
+    mutableSet.add(1)
+    mutableSet.add(4)
+    mutableSet.add(5)
+    mutableSet.add(6)
 
-        // We remove all members that are > 2
-        mutableSet.removeIf { x -> x > 2 }
-
-        // Outputs 2 and 1 (:: meaning direct access to reference)
-        mutableSet.forEach(::println)
-    }
-
-    /**
-     * Access to the first list element.
-     */
-    fun getListElement(): Int {
-        // Access to element at first position:
-        return mutableList[0]
-    }
-
-    /**
-     * Access to map element.
-     */
-    fun getMapElement(): Int? {
-        // We get element mapped to "something” key
-        // Since collection may or may not contain element with the key
-        // we will return Int?
-        return mutableMap["something"]
-    }
-
-    fun printCollections() {
-
-        mutableList.forEach { x -> println(x) } // or (conversion of lambda to reference) mutableList.forEach(::doSomething)
-        // if we need index for each element:
-        mutableList.forEachIndexed { index, item ->
-            println("$index, $item")
-        }
-        // or we can apply filter if needed:
-        mutableList
-            .filter { x -> x >= 4 }.forEach(::println)
-
-    }
+    // We remove all members that are > 2
+    mutableSet.removeIf { x -> x > 2 }
 }
 
