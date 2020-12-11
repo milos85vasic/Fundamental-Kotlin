@@ -269,11 +269,25 @@ fun main() {
     println(mutableMap2)
     println(mutableSet)
 
-    mutableList.remove(0) // Remove element and position
+    println("- - -")
+
+    mutableList.removeAt(0) // Remove element and position
     mutableList2.remove("Word") // Remove object
     mutableMap.remove("new") // Remove by map key
     mutableSet.remove(4) // Remove object
     mutableSet.removeAll(listOf(3, 5)) // Remove all objects
+
+    println(mutableList)
+    println(mutableList2)
+    println(mutableMap)
+    println(mutableSet)
+
+    mutableList.clear()
+    mutableList2.clear()
+    mutableMap.clear()
+    mutableSet.clear()
+
+    println("- - -")
 
     println(mutableList)
     println(mutableList2)
