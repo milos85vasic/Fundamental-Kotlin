@@ -265,14 +265,20 @@ fun main() {
 
     println(mutableList)
     println(mutableList2)
-
     println(mutableMap)
     println(mutableMap2)
-
     println(mutableSet)
 
-    // We can also remove some members.
-    mutableList2.remove("Word")
+    mutableList.remove(0) // Remove element and position
+    mutableList2.remove("Word") // Remove object
+    mutableMap.remove("new") // Remove by map key
+    mutableSet.remove(4) // Remove object
+    mutableSet.removeAll(listOf(3, 5)) // Remove all objects
+
+    println(mutableList)
+    println(mutableList2)
+    println(mutableMap)
+    println(mutableSet)
 
     // We remove all members that are > 2
     mutableSet.removeIf { x -> x > 2 }
