@@ -5,18 +5,23 @@ fun main() {
 
     val check: (Int) -> Boolean = { it > 0 }
 
-    fun `has at least one positive`(items: List<Int>): Boolean {
+    fun atLeastOnePositive(items: List<Int>): Boolean {
 
         return items.any(check)
     }
 
-    fun `has all items positive`(items: List<Int>): Boolean {
+    fun hasAllItemsPositive(items: List<Int>): Boolean {
 
         return items.all(check)
     }
 
-    fun `number of positive items`(items: List<Int>): Int {
+    fun numberOfPositiveNumbers(items: List<Int>): Int {
 
         return items.count(check)
     }
+
+    val numbers = listOf(-3, -2, -1, 0, 1, 2, 3, 4, 5)
+    val atLeastOnePositive = atLeastOnePositive(numbers)
+    val hasAllItemsPositive = hasAllItemsPositive(numbers)
+    val numberOfPositiveNumbers = numberOfPositiveNumbers(numbers)
 }
