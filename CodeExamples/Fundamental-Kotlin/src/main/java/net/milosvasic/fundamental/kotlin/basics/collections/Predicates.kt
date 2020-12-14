@@ -24,4 +24,9 @@ fun main() {
     val atLeastOnePositive = atLeastOnePositive(numbers)
     val hasAllItemsPositive = hasAllItemsPositive(numbers)
     val numberOfPositiveNumbers = numberOfPositiveNumbers(numbers)
+
+    println("Collection $numbers: ")
+    println("- has at least one positive: $atLeastOnePositive")
+    println("- has all items positive: $hasAllItemsPositive")
+    println("- number of positive numbers: $numberOfPositiveNumbers")
 }
