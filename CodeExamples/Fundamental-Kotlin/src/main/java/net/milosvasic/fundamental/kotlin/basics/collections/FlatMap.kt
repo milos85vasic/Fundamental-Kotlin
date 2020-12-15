@@ -18,5 +18,6 @@ fun main() {
     sortedLetters.addAll(letters)
     sortedLetters.sort()
 
+    println(allLetters)
     println(sortedLetters)
 }
