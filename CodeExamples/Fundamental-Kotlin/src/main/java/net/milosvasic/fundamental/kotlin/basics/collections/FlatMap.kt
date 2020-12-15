@@ -6,6 +6,7 @@ fun main() {
     val animalsList = animals.flatMap { listOf(it.value) }
 
     println(animals)
+    println(animalsList)
 
     val letters = mutableSetOf<Char>()
     val sortedLetters = mutableListOf<Char>()
@@ -17,6 +18,5 @@ fun main() {
     sortedLetters.addAll(letters)
     sortedLetters.sort()
 
-    println(animalsList)
     println(sortedLetters)
 }
