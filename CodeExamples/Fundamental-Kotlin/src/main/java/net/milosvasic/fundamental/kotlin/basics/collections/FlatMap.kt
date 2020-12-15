@@ -20,4 +20,8 @@ fun main() {
 
     println(allLetters)
     println(sortedLetters)
+
+    println("- - -")
+    val distinct = allLetters.distinct().sorted()
+    println(distinct)
 }
