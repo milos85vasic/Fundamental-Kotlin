@@ -8,11 +8,11 @@ fun main() {
     println(animals)
     println(animalsList)
 
-    val letters = mutableSetOf<Char>()
-    val sortedLetters = mutableListOf<Char>()
-
     val words = listOf("Hello", "World", "Airplane", "Car", "Beethoven", "Lorem", "Ipsum")
     val allLetters = words.flatMap { it.toLowerCase().toList() }
+
+    val letters = mutableSetOf<Char>()
+    val sortedLetters = mutableListOf<Char>()
 
     letters.addAll(allLetters)
     sortedLetters.addAll(letters)
