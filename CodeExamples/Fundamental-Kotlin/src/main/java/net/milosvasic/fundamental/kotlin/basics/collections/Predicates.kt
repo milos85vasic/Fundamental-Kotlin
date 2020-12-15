@@ -1,6 +1,5 @@
 package net.milosvasic.fundamental.kotlin.basics.collections
 
-
 fun main() {
 
     val check: (Int) -> Boolean = { it > 0 }
