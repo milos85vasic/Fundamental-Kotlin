@@ -11,7 +11,7 @@ fun main() {
     val letters = mutableSetOf<Char>()
     val sortedLetters = mutableListOf<Char>()
 
-    val words = listOf("Hello", "World")
+    val words = listOf("Hello", "World", "Airplane", "Car", "Beethoven", "Lorem", "Ipsum")
     val allLetters = words.flatMap { it.toLowerCase().toList() }
 
     letters.addAll(allLetters)
