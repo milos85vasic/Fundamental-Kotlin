@@ -19,9 +19,7 @@ fun main() {
     )
 
     val vehicles = listOf(cars, busses)
-    val manufacturers = vehicles.flatMap {
-        it
-    }.map {
+    val manufacturers = vehicles.flatten().map {
         it.name
     }
 
