@@ -24,4 +24,5 @@ fun main() {
     }
 
     println(manufacturers)
+    println(manufacturers.sorted())
 }
