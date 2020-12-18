@@ -6,7 +6,7 @@ fun main() {
     val max = items.maxOrNull()
     val min = items.minOrNull()
 
-    println("Fro: $items")
+    println("For: $items")
     println("Max. is: $max")
     println("Min. is: $min")
 }
