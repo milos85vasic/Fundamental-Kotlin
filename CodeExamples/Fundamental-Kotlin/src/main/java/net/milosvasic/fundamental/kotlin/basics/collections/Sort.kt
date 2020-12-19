@@ -1,16 +1,16 @@
 package net.milosvasic.fundamental.kotlin.basics.collections
 
-fun main(){
+fun main() {
 
     val numbers = listOf(1, 8, 9, 4, 5, 22, 44, 645, 67).sorted()
-    println("Numbers: $numbers")
+    println("Sorted numbers: $numbers")
 
     val stringNumbers = listOf("1", "-3", "5").sortedBy { it.toInt() }
-    println("String numbers: $stringNumbers")
+    println("Sorted string numbers: $stringNumbers")
 
-    val userIds = mapOf("admin" to 0, "john.smith" to 35653, "john.doe" to 32455)
-    println("User IDs: $userIds")
+    val words = mapOf("Yin" to "Yang", "Lorem" to "Ipsum", "Hello" to "World")
+    println("Sorted map: ${words.toSortedMap()}")
 
-    val sortedUserIds = userIds.toSortedMap()
-    println("Sorted user IDs: $sortedUserIds")
+    val set = setOf(2, 4, 4, 2, 0, 1, 3).sorted()
+    println("Sorted set: $set")
 }
