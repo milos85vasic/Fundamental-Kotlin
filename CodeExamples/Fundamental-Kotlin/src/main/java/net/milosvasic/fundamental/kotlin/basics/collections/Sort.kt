@@ -11,6 +11,8 @@ fun main() {
     val words = mapOf("Yin" to "Yang", "Lorem" to "Ipsum", "Hello" to "World")
     println("Sorted map: ${words.toSortedMap()}")
 
-    val set = setOf(2, 4, 4, 2, 0, 1, 3).sorted()
+    val set = setOf(2, 4, 4, 2, 0, 1, 3, 6, 4, 5).sorted()
     println("Sorted set: $set")
+    val resorted = set.sortedBy { it % 2 == 0 }
+    println("Re-sorted set: $resorted")
 }
