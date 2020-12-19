@@ -8,8 +8,8 @@ fun main() {
     val stringNumbers = listOf("1", "-3", "5").sortedBy { it.toInt() }
     println("Sorted string numbers: $stringNumbers")
 
-    val words = mapOf("Yin" to "Yang", "Lorem" to "Ipsum", "Hello" to "World")
-    println("Sorted map: ${words.toSortedMap()}")
+    val words = mapOf("Yin" to "Yang", "Lorem" to "Ipsum", "Hello" to "World").toSortedMap()
+    println("Sorted map: $words")
 
     val set = setOf(2, 4, 4, 2, 0, 1, 3, 6, 4, 5).sorted()
     println("Sorted set: $set")
