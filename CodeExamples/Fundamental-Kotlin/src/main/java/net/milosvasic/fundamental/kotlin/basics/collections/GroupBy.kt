@@ -2,8 +2,8 @@ package net.milosvasic.fundamental.kotlin.basics.collections
 
 fun main() {
 
-    val itemsToGroup = listOf("x", "y", "xy", "zzz", "xz")
-    val groupedItems = itemsToGroup.groupBy { it.length }
+    val words = listOf("a", "plane", "to", "car", "window")
+    val grouped = words.groupBy { it.length }
 
-    println("$itemsToGroup -> $groupedItems")
+    println("$words -> $grouped")
 }
