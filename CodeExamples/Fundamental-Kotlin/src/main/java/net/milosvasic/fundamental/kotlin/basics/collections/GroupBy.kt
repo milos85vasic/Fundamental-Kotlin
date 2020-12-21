@@ -5,5 +5,6 @@ fun main() {
     val words = listOf("a", "plane", "to", "car", "window")
     val grouped = words.groupBy { it.length }
 
-    println("$words -> $grouped")
+    println(words)
+    println(grouped)
 }
