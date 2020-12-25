@@ -5,22 +5,27 @@ val staticList = mutableListOf<Double>()
 fun main() {
 
     fun populate() {
+
         for (x in 0 until 100 * 1000 * 1000) {
             staticList.add(x.toDouble())
         }
     }
 
-    var memory = Runtime.getRuntime().freeMemory()
-    println("Free memory (1): $memory")
+    fun printMemoryStats() {
+
+        val heapSize = Runtime.getRuntime().totalMemory()
+        println("Heap size: $heapSize")
+    }
+
+    printMemoryStats()
 
     println("Populating static list")
     populate()
-    memory = Runtime.getRuntime().freeMemory()
-    println("Free memory (2): $memory")
+
+    printMemoryStats()
 
     println("Executing garbage collection")
     Runtime.getRuntime().gc()
 
-    memory = Runtime.getRuntime().freeMemory()
-    println("Free memory (3): $memory")
+    printMemoryStats()
 }
