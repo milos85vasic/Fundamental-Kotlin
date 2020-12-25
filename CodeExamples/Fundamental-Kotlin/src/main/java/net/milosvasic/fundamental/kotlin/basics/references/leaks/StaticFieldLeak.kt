@@ -25,7 +25,7 @@ fun main() {
     printMemoryStats()
 
     println("Executing garbage collection")
-    Runtime.getRuntime().gc()
+    System.gc()
 
     printMemoryStats()
 }
