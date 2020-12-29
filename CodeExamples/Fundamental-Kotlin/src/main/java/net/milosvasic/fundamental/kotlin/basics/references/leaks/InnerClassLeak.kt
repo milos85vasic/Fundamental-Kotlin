@@ -8,7 +8,7 @@ fun main() {
 
             fun print() {
 
-                // We are accessing to enclosing class reference and its field:
+                // We are accessing to outer class reference and its field:
                 println("Data: $data")
             }
         }
