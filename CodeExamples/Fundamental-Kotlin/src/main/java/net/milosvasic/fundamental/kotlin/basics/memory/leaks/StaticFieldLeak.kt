@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.basics.references.leaks
+package net.milosvasic.fundamental.kotlin.basics.memory.leaks
 
 val staticList = mutableListOf<Double>()
 
