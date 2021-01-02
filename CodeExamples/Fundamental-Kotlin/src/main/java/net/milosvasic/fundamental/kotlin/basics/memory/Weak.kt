@@ -8,7 +8,7 @@ fun main() {
     class Dummy {
 
         // Referent's method:
-        fun hello() = println("Dummy: $this")
+        fun hello() = println("Dummy: ${hashCode()}")
     }
 
     // Referent:
