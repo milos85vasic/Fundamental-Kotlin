@@ -13,7 +13,8 @@ fun main() {
     val dummy = Dummy()
 
     // We are initializing soft reference
-    // by passing a referent as a parameter:
+    // by passing a referent as a parameter
+    // exactly as we did with weak reference:
     val soft = SoftReference(dummy)
 
     soft.get()?.hello()
