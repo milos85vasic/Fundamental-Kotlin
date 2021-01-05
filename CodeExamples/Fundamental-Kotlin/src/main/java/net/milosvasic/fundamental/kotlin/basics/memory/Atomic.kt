@@ -24,6 +24,8 @@ fun main() {
         println("Time 1: ${System.nanoTime()}")
         // We are setting new reference:
         reference.set(d1)
+        println("Is d1: ${d1 === reference.get()}")
+        println("Is d2: ${d2 === reference.get()}")
 
         // Increment the counter:
         counter.incrementAndGet()
@@ -33,6 +35,8 @@ fun main() {
 
         println("Time 2: ${System.nanoTime()}")
         reference.set(d2)
+        println("Is d1: ${d1 === reference.get()}")
+        println("Is d2: ${d2 === reference.get()}")
         counter.incrementAndGet()
     }
 
@@ -52,6 +56,7 @@ fun main() {
     // Get the referent:
     val instance = reference.get()
 
+    println("Time 3: ${System.nanoTime()}")
     // Compare by reference:
     println("Is d1: ${d1 === instance}")
     println("Is d2: ${d2 === instance}")
