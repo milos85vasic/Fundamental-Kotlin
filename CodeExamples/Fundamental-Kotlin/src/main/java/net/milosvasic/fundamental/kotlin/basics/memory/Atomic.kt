@@ -38,6 +38,8 @@ fun main() {
 
     // We will use executor which will ensure that t1 completes before t2:
     val executor = Executors.newSingleThreadExecutor()
+
+    // We are sending threads to be executed sequentially:
     executor.execute(t1)
     executor.execute(t2)
 
