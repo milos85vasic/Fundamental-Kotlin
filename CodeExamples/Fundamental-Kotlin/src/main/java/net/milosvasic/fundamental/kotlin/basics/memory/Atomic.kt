@@ -21,9 +21,10 @@ fun main() {
     val t1 = Thread {
 
         println("Time 1: ${System.nanoTime()}")
+        // We are setting new reference:
         reference.set(d1)
 
-        // Increment counter:
+        // Increment the counter:
         counter.incrementAndGet()
     }
 
@@ -31,8 +32,6 @@ fun main() {
 
         println("Time 2: ${System.nanoTime()}")
         reference.set(d2)
-
-        // Increment counter:
         counter.incrementAndGet()
     }
 
