@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicReference
 
 fun main() {
 
+    // We define some stub class:
     class Dummy
 
     val d1 = Dummy()
