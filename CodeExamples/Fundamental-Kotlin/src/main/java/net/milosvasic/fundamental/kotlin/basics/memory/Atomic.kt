@@ -43,7 +43,7 @@ fun main() {
     executor.execute(t1)
     executor.execute(t2)
 
-    // Wait until both threads complete
+    // We wait until both threads complete
     while (counter.get() < 2) {
 
         Thread.yield()
