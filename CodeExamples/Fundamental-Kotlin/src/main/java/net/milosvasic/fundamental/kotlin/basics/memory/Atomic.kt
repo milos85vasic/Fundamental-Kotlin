@@ -3,6 +3,7 @@ package net.milosvasic.fundamental.kotlin.basics.memory
 import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicReference
+import kotlin.system.exitProcess
 
 fun main() {
 
@@ -55,4 +56,5 @@ fun main() {
 
     // Clear the reference:
     reference.set(null)
+    exitProcess(0)
 }
