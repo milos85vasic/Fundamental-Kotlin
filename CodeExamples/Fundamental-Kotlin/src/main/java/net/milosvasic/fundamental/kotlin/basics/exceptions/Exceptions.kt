@@ -8,7 +8,7 @@ fun main() {
         "Mercedes" -> 100
         "BMW" -> 200
         "Opel" -> 300
-        else -> throw IllegalArgumentException("We do not recognize this model: '$model'")
+        else -> throw IllegalArgumentException("We do not recognize '$model' car model")
     }
 
     val models = listOf("Mercedes", "Opel", "Fiat")
