@@ -1,21 +1,13 @@
 package net.milosvasic.fundamental.kotlin.basics.exceptions
 
-import kotlin.system.exitProcess
-
 fun main() {
 
-    fun fail(t: Throwable) {
-
-        println(t.message)
-        exitProcess(1)
-    }
-
-    @Throws(Throwable::class)
+    @Throws(IllegalArgumentException::class)
     fun process(what: Int) {
 
         if (what < 0) {
 
-            throw Throwable("Error")
+            throw IllegalArgumentException("Invali parameter")
         }
         println("Processing: $what")
     }
@@ -36,6 +28,7 @@ fun main() {
         }
     }
 
+    // ---
 
     @Throws(IllegalArgumentException::class)
     fun getCarPrice(model: String) = when (model) {
