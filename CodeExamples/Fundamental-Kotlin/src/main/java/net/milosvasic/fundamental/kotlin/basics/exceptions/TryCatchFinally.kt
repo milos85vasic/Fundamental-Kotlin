@@ -19,7 +19,7 @@ fun main() {
         try {
 
             process(it)
-        } catch (t: Throwable) {
+        } catch (t: IllegalArgumentException) {
 
             println(t.message)
         } finally {
