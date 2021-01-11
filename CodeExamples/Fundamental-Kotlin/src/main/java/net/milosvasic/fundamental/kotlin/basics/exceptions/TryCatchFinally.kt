@@ -7,7 +7,7 @@ fun main() {
 
         if (what < 0) {
 
-            throw IllegalArgumentException("Invalid parameter")
+            throw IllegalArgumentException("Invalid parameter: $what")
         }
         println("Processing: $what")
     }
