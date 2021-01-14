@@ -14,9 +14,21 @@ fun main() {
     // 'constructor' keyword is omitted for primary constructor:
     class Plane(val brand: String)
 
-    class Calculator(val parameter: Int, val calculatedValue: Int = parameter * 2)
+    /*
+        class Calculator(val parameter1: Int) {
+
+            val parameter2: Int
+            init {
+
+                parameter2 = parameter1 * 2
+            }
+        }
+    */
+    // Simplified version of the class:
+    class Calculator(val parameter1: Int, val parameter2: Int = parameter1 * 2)
 
     class NotPublicConstructed private constructor(val name: String){
+
         // ...
     }
 
@@ -39,4 +51,6 @@ fun main() {
     val car2 = Car("Mercedes")
     val plane = Plane("Boeing")
 
+    val calc = Calculator(2)
+    val calc2 = Calculator(2, 4)
 }
