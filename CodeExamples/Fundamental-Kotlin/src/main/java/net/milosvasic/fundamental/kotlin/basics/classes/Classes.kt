@@ -52,5 +52,12 @@ fun main() {
     val plane = Plane("Boeing")
 
     val calc = Calculator(2)
-    val calc2 = Calculator(2, 4)
+    val calc2 = Calculator(3)
+    val calc3 = Calculator(2, 4)
+    val calc4 = Calculator(3, 5)
+
+    println("${calc.parameter1}, ${calc.parameter2}")
+    println("${calc2.parameter1}, ${calc2.parameter2}")
+    println("${calc3.parameter1}, ${calc3.parameter2}")
+    println("${calc4.parameter1}, ${calc4.parameter2}")
 }
