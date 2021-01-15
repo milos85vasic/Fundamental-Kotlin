@@ -60,4 +60,8 @@ fun main() {
     println("${calc2.parameter1}, ${calc2.parameter2}")
     println("${calc3.parameter1}, ${calc3.parameter2}")
     println("${calc4.parameter1}, ${calc4.parameter2}")
+
+    val person1 = Person("John Smith")
+    val person2 = Person("John Doe", 1985)
+    val person3 = Person("John SomeOther", 1987, 190)
 }
