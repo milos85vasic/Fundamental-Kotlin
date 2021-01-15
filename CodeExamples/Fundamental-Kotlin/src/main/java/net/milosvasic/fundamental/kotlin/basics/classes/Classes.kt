@@ -34,7 +34,7 @@ fun main() {
 
     class Person(val name: String) {
 
-        constructor(name: String, year: Int) : this(name)
+        constructor(name: String, year: Int) : this(name) // ← 'this(...)' calls primary constructor
 
         constructor(name: String, year: Int, height: Int) : this(name)
     }
