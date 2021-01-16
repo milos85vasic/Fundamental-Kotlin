@@ -34,6 +34,7 @@ fun main() {
     center.print()
 
     val location = Coordinate()
+    location.reposition = 100
     location.x = 10
     location.y = 20
     location.z = 30
