@@ -5,22 +5,26 @@ fun main() {
 
     class Coordinate {
 
+        var reposition: Int = 0
+
         var x: Int = 0
-            get() = field
+            // get() = field
             set(value) {
-                field = value
+                field = reposition(value)
             }
 
         var y: Int = 0
-            get() = field
+            // get() = field
             set(value) {
-                field = value
+                field = reposition(value)
             }
 
         var z: Int = 0
-            get() = field
+            // get() = field
             set(value) {
-                field = value
+                field = reposition(value)
             }
+
+        private fun reposition(param: Int) = param + reposition
     }
 }
