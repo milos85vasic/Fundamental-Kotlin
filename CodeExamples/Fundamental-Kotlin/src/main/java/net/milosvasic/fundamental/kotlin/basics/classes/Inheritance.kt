@@ -19,6 +19,9 @@ fun main() {
 
     // Another way to extend class
     class Bus : Vehicle {
+
         constructor(type: String) : super(type)
     }
+
+
 }
