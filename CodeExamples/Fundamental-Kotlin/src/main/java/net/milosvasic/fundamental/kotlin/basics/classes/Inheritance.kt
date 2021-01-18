@@ -2,26 +2,32 @@ package net.milosvasic.fundamental.kotlin.basics.classes
 
 fun main() {
 
-    // Inherits Any
+    // Class 'Human' Inherits  by default: 'Any':
     open class Human
 
-    // Indian extends Human
+    // Class 'Indian' inherits Human:
     class Indian : Human()
 
-    // Class with non-empty constructor
+    // Class with non-empty constructor:
     open class Vehicle(type: String)
 
-    // Truck extends Vehicle and it's constructor
+    // Class 'Truck' inherits 'Vehicle' and it's constructor:
     class Truck(type: String) : Vehicle(type)
 
-    // Train extends Vehicle but has empty constructor. Value is passed to parent constructor.
+    // Class 'Train' inherits class 'Vehicle'
+    // but it has empty constructor. Value is passed to the parent constructor:
     class Train : Vehicle("Civil")
 
-    // Another way to extend class
+    // Another way to inherit class"
     class Bus : Vehicle {
 
+        // Constructor goes here:
         constructor(type: String) : super(type)
+
+        init {
+
+            // Your special initialization code
+            // ...
+        }
     }
-
-
 }
