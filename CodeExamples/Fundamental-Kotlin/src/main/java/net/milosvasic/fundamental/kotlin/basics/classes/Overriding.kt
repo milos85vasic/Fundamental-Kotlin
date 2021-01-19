@@ -4,9 +4,9 @@ fun main(){
 
     open class Engine(protected val model: String) {
 
-        open fun turnOn() = println("$model: Turn on")
+        open fun turnOn() = println("$model: Turning on")
 
-        open fun turnOff() = println("$model: Turn off")
+        open fun turnOff() = println("$model: Turning off")
     }
 
     class CarEngine(model: String) : Engine(model) {
