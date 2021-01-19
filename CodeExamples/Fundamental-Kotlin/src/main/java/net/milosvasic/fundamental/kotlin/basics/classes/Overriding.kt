@@ -47,7 +47,7 @@ fun main(){
 
         final override fun turnOn() {
 
-            // Execute something before 'super' business logic:
+            // Executing something before 'super' business logic:
             println("$model: Preparing")
             super.turnOn()
             println("$model: Engine is running")
