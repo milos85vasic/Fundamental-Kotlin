@@ -42,4 +42,27 @@ fun main(){
     val customEngine = CustomEngine("Rocket")
     customEngine.turnOn()
     customEngine.turnOff()
+
+    open class TruckEngine(model: String) : Engine(model) {
+
+        final override fun turnOn() {
+
+            println("$model: Preparing")
+            super.turnOn()
+            println("$model: Engine is running")
+        }
+
+        final override fun turnOff() {
+
+            println("$model: Preparing")
+            super.turnOff()
+            println("$model: Engine has stopped")
+        }
+    }
+
+    class Scania : TruckEngine("Scania"){
+
+        // We cannot override 'turnOn' and 'turnOff' functions
+        // since they are marked with 'final override'
+    }
 }
