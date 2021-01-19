@@ -2,44 +2,44 @@ package net.milosvasic.fundamental.kotlin.basics.classes
 
 fun main(){
 
-    open class Engine {
+    open class Engine(protected val model: String) {
 
-        open fun turnOn() = println("Turn on")
+        open fun turnOn() = println("$model: Turn on")
 
-        open fun turnOff() = println("Turn off")
+        open fun turnOff() = println("$model: Turn off")
     }
 
-    class CarEngine : Engine() {
+    class CarEngine(model: String) : Engine(model) {
 
         override fun turnOn() {
 
             super.turnOn()
-            println("Car is starting")
+            println("$model: Car is starting")
         }
 
         override fun turnOff() {
 
             super.turnOff()
-            println("Car is stopping")
+            println("$model: Car is stopping")
         }
     }
 
-    class CustomEngine : Engine() {
+    class CustomEngine(model: String) : Engine(model) {
 
+        // We override just 'turnOn' function for this class:
         override fun turnOn() {
 
-            // No call for the 'super'
-            println("Car is starting")
+            // We don't want super class business logic,
+            // so we do not call 'super':
+            println("$model: Car is starting")
         }
-
-        // We will not override 'turnOff' function for this class
     }
 
-    val carEngine = CarEngine()
+    val carEngine = CarEngine("Fiat")
     carEngine.turnOn()
     carEngine.turnOff()
 
-    val customEngine = CustomEngine()
+    val customEngine = CustomEngine("Rocket")
     customEngine.turnOn()
     customEngine.turnOff()
 }
