@@ -8,11 +8,11 @@ fun main() {
 
         fun changeA(a: String) {
 
-            println("${this@Example.a} becomes: $a")
+            println("'${this@Example.a}' becomes: '$a'")
             this@Example.a = a
         }
 
-        fun printA() = "-> $a"
+        fun printA() = println("current -> '$a'")
     }
 
     val example = Example()
