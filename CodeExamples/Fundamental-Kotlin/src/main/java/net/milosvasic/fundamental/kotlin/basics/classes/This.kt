@@ -2,13 +2,25 @@ package net.milosvasic.fundamental.kotlin.basics.classes
 
 fun main() {
 
-    class ThisExample {
+    class Example {
 
-        var a: String = "Default a"
+        var a: String = "Example"
 
         fun changeA(a: String) {
-            this@ThisExample.a = a
+
+            println("${this@Example.a} becomes: $a")
+            this@Example.a = a
         }
 
+        fun printA() = "-> $a"
     }
+
+    val example = Example()
+    example.printA()
+    example.changeA("Hello world")
+    example.printA()
+    example.changeA("Lorem ipsum")
+    example.printA()
+    example.changeA("I love Kotlin")
+    example.printA()
 }
