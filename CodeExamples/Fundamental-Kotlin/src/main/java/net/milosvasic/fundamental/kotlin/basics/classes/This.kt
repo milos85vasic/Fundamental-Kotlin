@@ -12,7 +12,7 @@ fun main() {
             this@Example.a = a
         }
 
-        fun printA() = println("current -> '$a'")
+        fun printA() = println("Current value is '$a'")
     }
 
     val example = Example()
