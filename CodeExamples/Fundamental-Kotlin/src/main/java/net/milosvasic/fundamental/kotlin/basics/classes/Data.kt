@@ -11,6 +11,6 @@ fun main() {
         User("John Smith", 35)
     ).forEach {
 
-        println("User: $it")
+        println("$it")
     }
 }
