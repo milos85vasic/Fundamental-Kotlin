@@ -5,22 +5,27 @@ fun main() {
     abstract class Animal {
 
         abstract fun walk()
-
-        fun run() {
-            println("run")
-        }
     }
 
     open class Cat : Animal() {
 
         override fun walk() {
 
-            println("walk")
+            println("Cat walks")
         }
     }
 
-    abstract class BigCat : Cat() {
+    class Lion : Cat() {
 
-        override abstract fun walk()
+        override fun walk() {
+
+            println("Lion walks")
+        }
     }
+
+    val cat = Cat()
+    val lion = Lion()
+
+    cat.walk()
+    lion.walk()
 }
