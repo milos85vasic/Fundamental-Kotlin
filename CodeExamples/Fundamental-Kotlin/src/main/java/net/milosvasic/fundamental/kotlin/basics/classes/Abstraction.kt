@@ -45,4 +45,15 @@ fun main() {
         override val database: String
             get() = "MySQL"
     }
+
+    val databases = listOf(
+
+        PostgresProvider().database,
+        MySQLProvider().database
+    )
+
+    databases.forEach {
+
+        println(it)
+    }
 }
