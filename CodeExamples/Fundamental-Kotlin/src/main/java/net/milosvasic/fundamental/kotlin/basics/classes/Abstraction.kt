@@ -28,4 +28,21 @@ fun main() {
 
     cat.walk()
     lion.walk()
+
+    abstract class DbProvider {
+
+        abstract val database: String
+    }
+
+    class PostgresProvider : DbProvider() {
+
+        override val database: String
+            get() = "Postgres"
+    }
+
+    class MySQLProvider : DbProvider() {
+
+        override val database: String
+            get() = "MySQL"
+    }
 }
