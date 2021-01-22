@@ -29,6 +29,8 @@ fun main() {
     cat.walk()
     lion.walk()
 
+    println("- - - - -")
+
     abstract class DbProvider {
 
         abstract val database: String
