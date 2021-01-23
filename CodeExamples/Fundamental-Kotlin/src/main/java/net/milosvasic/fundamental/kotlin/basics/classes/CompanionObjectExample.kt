@@ -1,15 +1,18 @@
 package net.milosvasic.fundamental.kotlin.basics.classes
 
-class CompanionObjectExample {
+class Dummy {
 
-    companion object StaticObject {
-        fun iAmStatic(){
-            println("I am static!")
+    companion object {
+
+        fun hello(){
+
+            println("Hello!")
         }
     }
 }
 
 fun main () {
 
-
+    // We are accessing to 'hello' function without instantiation needed:
+    Dummy.hello()
 }
