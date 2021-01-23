@@ -4,14 +4,11 @@ class Dummy {
 
     companion object {
 
-        fun hello(){
-
-            println("Hello!")
-        }
+        fun hello() = println("Hello!")
     }
 }
 
-fun main () {
+fun main() {
 
     // We are accessing to 'hello' function without instantiation needed:
     Dummy.hello()
