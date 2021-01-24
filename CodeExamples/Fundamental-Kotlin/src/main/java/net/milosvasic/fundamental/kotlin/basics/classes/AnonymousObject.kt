@@ -1,27 +1,26 @@
-package net.milosvasic.fundamental.kotlin.classes
+package net.milosvasic.fundamental.kotlin.basics.classes
 
-/**
- * Created by mvasic on 7/3/16.
- */
-abstract class Command {
-    abstract fun execute()
-}
 
-class Executor : Command() {
-    private val commands = mutableListOf<Command>()
+fun main() {
 
-    fun addCommand(command: Command) {
-        commands.add(command)
+    abstract class Command {
+        abstract fun execute()
     }
 
-    override fun execute() {
-        for (command in commands) {
-            command.execute()
+    class Executor : Command() {
+        private val commands = mutableListOf<Command>()
+
+        fun addCommand(command: Command) {
+            commands.add(command)
+        }
+
+        override fun execute() {
+            for (command in commands) {
+                command.execute()
+            }
         }
     }
-}
 
-fun tryAnonymousObjects() {
     val executor = Executor()
 
     executor.addCommand(object : Command() {
