@@ -1,6 +1,6 @@
 package net.milosvasic.fundamental.kotlin.basics.classes
 
-class Dummy {
+class Greeting {
 
     companion object {
 
@@ -11,5 +11,5 @@ class Dummy {
 fun main() {
 
     // We are accessing to 'hello' function without instantiation needed:
-    Dummy.hello()
+    Greeting.hello()
 }
