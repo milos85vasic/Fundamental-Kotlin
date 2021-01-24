@@ -1,31 +1,30 @@
 package net.milosvasic.fundamental.kotlin.basics.classes
 
+abstract class Command {
 
+    abstract fun execute()
+}
+
+class Executor : Command() {
+
+    private val commands = mutableListOf<Command>()
+
+    fun addCommand(command: Command) {
+
+        commands.add(command)
+    }
+
+    override fun execute() {
+
+        for (command in commands) {
+            command.execute()
+        }
+    }
+}
+
+// Let's try it:
 fun main() {
 
-    abstract class Command {
-
-        abstract fun execute()
-    }
-
-    class Executor : Command() {
-
-        private val commands = mutableListOf<Command>()
-
-        fun addCommand(command: Command) {
-
-            commands.add(command)
-        }
-
-        override fun execute() {
-
-            for (command in commands) {
-                command.execute()
-            }
-        }
-    }
-
-    // Let's try it:
     val executor = Executor()
 
     val obj = object : Command() {

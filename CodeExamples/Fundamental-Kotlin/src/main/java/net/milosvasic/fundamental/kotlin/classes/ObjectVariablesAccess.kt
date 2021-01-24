@@ -1,9 +1,8 @@
 package net.milosvasic.fundamental.kotlin.classes
 
-/**
- * Created by mvasic on 7/3/16.
- */
-fun countExecution(){
+
+fun countExecution() {
+
     val executor = Executor()
     var leftExecuted = 0
     var rightExecuted = 0
