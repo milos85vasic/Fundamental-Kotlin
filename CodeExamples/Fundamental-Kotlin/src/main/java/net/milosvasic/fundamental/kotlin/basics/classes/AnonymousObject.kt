@@ -27,7 +27,7 @@ fun main() {
 
     val executor = Executor()
 
-    val obj = object : Command() {
+    val obj = object : Command() { // <-- Defining “anonymous” object
 
         override fun execute() {
 
