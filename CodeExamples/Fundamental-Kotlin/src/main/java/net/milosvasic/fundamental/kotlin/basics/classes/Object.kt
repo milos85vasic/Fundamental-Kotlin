@@ -20,5 +20,5 @@ object ImageManager {
 fun main() {
 
     val url = URL("https://fundamental-kotlin.com/images/cover.png")
-    ImageManager.download(url) // <-- Not instantiation needed for the 'ImageManager' data type
+    ImageManager.download(url) // <-- No instantiation needed for the 'ImageManager' data type
 }
