@@ -4,7 +4,7 @@ public class Companions {
 
     public static void tryIt() {
 
-        // Companion object is not named:
+        // This class companion object is not named:
         Greeting.Companion.hello();
 
         // Let's try named one:
