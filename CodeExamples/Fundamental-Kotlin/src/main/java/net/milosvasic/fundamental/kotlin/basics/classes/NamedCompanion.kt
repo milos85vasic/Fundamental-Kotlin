@@ -14,5 +14,9 @@ class Database(val type: String) {
 
 fun main () {
 
+    //    val inMemory = Database.Factory.createInMemoryDatabase()
+    //    val filesystem = Database.Factory.createFilesystemDatabase()
 
+    val inMemory = Database.createInMemoryDatabase()
+    val filesystem = Database.createFilesystemDatabase()
 }
