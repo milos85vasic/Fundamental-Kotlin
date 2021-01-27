@@ -19,4 +19,7 @@ fun main () {
 
     val inMemory = Database.createInMemoryDatabase()
     val filesystem = Database.createFilesystemDatabase()
+
+    inMemory.describe()
+    filesystem.describe()
 }
