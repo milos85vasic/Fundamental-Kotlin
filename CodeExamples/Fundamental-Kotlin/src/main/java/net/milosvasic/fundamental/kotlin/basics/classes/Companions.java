@@ -7,7 +7,8 @@ public class Companions {
         // Companion object is not named:
         Greeting.Companion.hello();
 
-        // Let's trt named one:
+        // Let's try named one:
         Database database = Database.Factory.createInMemoryDatabase();
+        database.describe();
     }
 }
