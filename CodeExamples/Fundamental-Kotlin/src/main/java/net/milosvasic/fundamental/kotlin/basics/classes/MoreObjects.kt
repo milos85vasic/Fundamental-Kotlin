@@ -20,7 +20,7 @@ fun main() {
 
         override fun displayImage() {
 
-            println("Displaying image.")
+            println("Displaying image")
         }
 
         override fun playSound() {
