@@ -2,21 +2,25 @@ package net.milosvasic.fundamental.kotlin.basics.classes
 
 fun main(){
 
+    var countLeft = 0
+    var countRight = 0
     val executor = Executor()
-    var leftExecuted = 0
-    var rightExecuted = 0
 
     val left = object: Command(){
+
         override fun execute() {
-            println("LEFT")
-            leftExecuted++
+
+            println("Left")
+            countLeft++
         }
     }
 
     val right = object: Command(){
+
         override fun execute() {
-            println("RIGHT")
-            rightExecuted++
+
+            println("Right")
+            countRight++
         }
     }
 
@@ -27,7 +31,9 @@ fun main(){
     executor.addCommand(right)
     executor.addCommand(left)
 
-    println("LEFT vs RIGHT, [ ${leftExecuted} ][ ${rightExecuted} ]")
+    println("Executed left: $countLeft")
+    println("Executed right: $countRight")
     executor.execute()
-    println("LEFT vs RIGHT, [ ${leftExecuted} ][ ${rightExecuted} ]")
+    println("Executed left: $countLeft")
+    println("Executed right: $countRight")
 }
