@@ -1,10 +1,6 @@
-package net.milosvasic.fundamental.kotlin.classes
+package net.milosvasic.fundamental.kotlin.basics.classes
 
-import net.milosvasic.fundamental.kotlin.basics.classes.Command
-import net.milosvasic.fundamental.kotlin.basics.classes.Executor
-
-
-fun countExecution() {
+fun main(){
 
     val executor = Executor()
     var leftExecuted = 0
