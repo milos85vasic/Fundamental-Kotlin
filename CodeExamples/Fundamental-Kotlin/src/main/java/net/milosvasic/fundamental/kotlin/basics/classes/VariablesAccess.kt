@@ -10,7 +10,7 @@ fun main(){
 
         override fun execute() {
 
-            println("Left")
+            println("Executing: LEFT")
             countLeft++
         }
     }
@@ -19,7 +19,7 @@ fun main(){
 
         override fun execute() {
 
-            println("Right")
+            println("Executing: RIGHT")
             countRight++
         }
     }
