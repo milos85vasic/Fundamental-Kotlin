@@ -40,4 +40,11 @@ fun main() {
             println("Encrypting: $what, using(${getUsedResources()})")
         }
     }
+
+    val url = URL("http://www.example.com/example.jpg")
+    val download = Download(url)
+    download.execute()
+
+    val encrypt = Encrypt("Hello world")
+    encrypt.execute()
 }
