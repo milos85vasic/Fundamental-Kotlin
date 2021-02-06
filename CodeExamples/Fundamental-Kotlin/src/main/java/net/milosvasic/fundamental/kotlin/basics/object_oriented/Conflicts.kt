@@ -15,10 +15,8 @@ interface IDummy2 {
 
     fun doSomething() {
 
-        hello().forEach {
-
-            println(it)
-        }
+        val hello = hello()
+        println(hello.reversed())
     }
 
     fun hello() = "Hello world"
