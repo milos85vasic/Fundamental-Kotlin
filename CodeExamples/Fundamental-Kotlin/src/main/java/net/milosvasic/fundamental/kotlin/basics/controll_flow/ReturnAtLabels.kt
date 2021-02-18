@@ -14,8 +14,10 @@ fun main() {
 
     fun example2(numbers: List<Int>) {
 
-        numbers.forEach myLabel1@{ item ->
-            if (item % 2 == 0) return@myLabel1
+        numbers.forEach myNumbers@{ item ->
+            if (item % 2 == 0) {
+                return@myNumbers
+            }
             println("Item: $item")
         }
     }
@@ -37,4 +39,12 @@ fun main() {
             }
         )
     }
+
+    var numbers = arrayListOf(1, 3, 5, 7, 9)
+    println("Example 1:")
+    example1(numbers, 5)
+
+    println("Example 2:")
+    numbers = arrayListOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    example2(numbers)
 }
