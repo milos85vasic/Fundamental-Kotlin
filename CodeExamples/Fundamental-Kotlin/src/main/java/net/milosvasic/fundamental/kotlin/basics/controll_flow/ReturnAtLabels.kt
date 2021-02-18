@@ -57,5 +57,5 @@ fun main() {
 
     println("Example 4:")
     numbers = arrayListOf(1, 3, 5, 7, 9)
-    example3(numbers)
+    example4(numbers)
 }
