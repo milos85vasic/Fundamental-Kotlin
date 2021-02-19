@@ -10,7 +10,7 @@ fun main() {
     }
 
     val data1 = Container(1)
-    val data2 = Container("Some string")
+    val data2 = Container("Hello world!")
     val data3 = Container(true)
 
     data1.describe()
