@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.classes
+package net.milosvasic.fundamental.kotlin.object_oriented
 
 /**
  * Created by milosvasic on 6/8/16.

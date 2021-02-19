@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.classes.data
+package net.milosvasic.fundamental.kotlin.object_oriented.data
 
 
 data class Person(val name: String, val age: Int){}

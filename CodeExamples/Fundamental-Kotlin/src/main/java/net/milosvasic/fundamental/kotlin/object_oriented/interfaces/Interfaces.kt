@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.classes.interfaces
+package net.milosvasic.fundamental.kotlin.object_oriented.interfaces
 
 
 interface Audio {

@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.classes.generics
+package net.milosvasic.fundamental.kotlin.object_oriented.generics
 
 /**
  * Created by mvasic on 7/2/16.

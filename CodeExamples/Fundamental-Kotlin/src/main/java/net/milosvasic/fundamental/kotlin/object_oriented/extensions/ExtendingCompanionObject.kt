@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.classes.extensions
+package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 
 class HasCompanion {
     companion object {
