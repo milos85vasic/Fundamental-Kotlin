@@ -58,7 +58,6 @@ fun main() {
     val generalCarWasher: CarWash<Car> = CarWash()
 
     bmwCarWasher.washCar(bmw)
-    // bmwCarWasher.washCar(mercedes) // Can't was it here! :)
     mercedesCarWasher.washCar(mercedes)
     generalCarWasher.washCar(bmw)
     generalCarWasher.washCar(mercedes)
