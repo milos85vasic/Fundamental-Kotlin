@@ -1,30 +1,30 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.generics
 
-fun main(){
+fun main() {
 
     abstract class Airplane {
 
-        abstract fun decribeMe();
+        abstract fun describeMe()
     }
 
     class Boeing : Airplane() {
 
-        override fun decribeMe() {
+        override fun describeMe() {
             println("Being")
         }
     }
 
     class Airbus : Airplane() {
 
-        override fun decribeMe() {
+        override fun describeMe() {
             println("Airbus")
         }
     }
 
     class AirplaneDescriptor {
 
-        fun <T : Airplane> describe(airplane: T) {
-            airplane.decribeMe()
+        fun <T : Airplane> describeMe(airplane: T) {
+            airplane.describeMe()
         }
     }
 
@@ -32,6 +32,6 @@ fun main(){
     val airplane2 = Boeing()
     val descriptor = AirplaneDescriptor()
 
-    descriptor.describe(airplane1)
-    descriptor.describe(airplane2)
+    descriptor.describeMe(airplane1)
+    descriptor.describeMe(airplane2)
 }
