@@ -26,13 +26,12 @@ fun main() {
         }
     }
 
-    fun tryGenericFunctions() {
-        val truckEngine = TruckEngine()
-        val rocketEngine = RocketEngine()
-        val diagnostics = EngineDiagnostics()
-        diagnostics.checkEngine(truckEngine)
-        diagnostics.checkEngine(rocketEngine)
-    }
+    val truckEngine = TruckEngine()
+    val rocketEngine = RocketEngine()
+    val diagnostics = EngineDiagnostics()
+
+    diagnostics.checkEngine(truckEngine)
+    diagnostics.checkEngine(rocketEngine)
 }
 
 
