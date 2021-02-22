@@ -1,31 +1,33 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.generics
 
-/**
- * Created by mvasic on 7/2/16.
- */
-abstract class Airplane {
-    abstract fun decribeMe();
-}
+fun main(){
 
-class Boeing : Airplane() {
-    override fun decribeMe() {
-        println("Being")
+    abstract class Airplane {
+
+        abstract fun decribeMe();
     }
-}
 
-class Airbus : Airplane() {
-    override fun decribeMe() {
-        println("Airbus")
+    class Boeing : Airplane() {
+
+        override fun decribeMe() {
+            println("Being")
+        }
     }
-}
 
-class AirplaneDescriptor {
-    fun <T : Airplane> describe(airplane: T) {
-        airplane.decribeMe()
+    class Airbus : Airplane() {
+
+        override fun decribeMe() {
+            println("Airbus")
+        }
     }
-}
 
-fun tryExtendsExample(){
+    class AirplaneDescriptor {
+
+        fun <T : Airplane> describe(airplane: T) {
+            airplane.decribeMe()
+        }
+    }
+
     val airplane1 = Airbus()
     val airplane2 = Boeing()
     val descriptor = AirplaneDescriptor()
