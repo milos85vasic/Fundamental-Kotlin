@@ -1,6 +1,7 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
 enum class TIME {
+
     MICROSECOND,
     MILLISECOND,
     SECOND,
@@ -12,6 +13,7 @@ enum class TIME {
 }
 
 enum class COUNTRY(val capital: String) {
+
     ITALY("Rome"),
     SPAIN("Madrid"),
     RUSSIA("Moscow"),
