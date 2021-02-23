@@ -1,8 +1,5 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
-/**
- * Created by mvasic on 7/2/16.
- */
 enum class TIME {
     MICROSECOND,
     MILLISECOND,
@@ -21,7 +18,8 @@ enum class COUNTRY(val capital: String) {
     SCOTLAND("Edinburgh")
 }
 
-fun trySomeEunums(){
+fun main() {
+
     println("Time unit: ${TIME.MILLISECOND}")
     println("Time unit: ${TIME.SECOND}")
     println("Time unit: ${TIME.MINUTE}")
