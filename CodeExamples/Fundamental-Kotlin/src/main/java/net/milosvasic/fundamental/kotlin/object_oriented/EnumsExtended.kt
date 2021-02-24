@@ -1,9 +1,7 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
-/**
- * Created by mvasic on 7/2/16.
- */
-enum class DEVICE_CAPABILITIES {
+enum class CAPABILITIES {
+
     POWER_ON {
         override fun execute() {
             println("Powering on")
@@ -33,15 +31,18 @@ enum class DEVICE_CAPABILITIES {
     abstract fun execute()
 }
 
-fun doMoreEnumsStuff() {
-    val operations = listOf<DEVICE_CAPABILITIES>(
-            DEVICE_CAPABILITIES.POWER_ON,
-            DEVICE_CAPABILITIES.VOLUME_UP,
-            DEVICE_CAPABILITIES.VOLUME_UP,
-            DEVICE_CAPABILITIES.VOLUME_UP,
-            DEVICE_CAPABILITIES.POWER_OFF
+fun main(){
+
+    val capabilities = listOf(
+
+        CAPABILITIES.POWER_ON,
+        CAPABILITIES.VOLUME_UP,
+        CAPABILITIES.VOLUME_UP,
+        CAPABILITIES.VOLUME_UP,
+        CAPABILITIES.POWER_OFF
     )
-    for (operation in operations) {
-        operation.execute()
+
+    for (capability in capabilities) {
+        capability.execute()
     }
 }
