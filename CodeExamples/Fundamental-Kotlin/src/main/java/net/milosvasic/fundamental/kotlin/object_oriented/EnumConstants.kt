@@ -7,19 +7,20 @@ enum class PLANETS {
     PLUTO
 }
 
-fun main(){
+fun main() {
 
     // Returns PLUTO enum item:
     println("Value of: ${PLANETS.valueOf("PLUTO")}")
 
     try {
 
-        println("Value of: ${PLANETS.valueOf("VENUS")}")
+        val planetBlah = PLANETS.valueOf("BLAH")
+        println("Planet: $planetBlah")
     } catch (e: IllegalArgumentException) {
 
         println(e.message)
     }
 
     // values() func. returns array containing all enum items:
-    println("Values size: ${PLANETS.values().size}")
+    println("Planets count: ${PLANETS.values().size}")
 }
