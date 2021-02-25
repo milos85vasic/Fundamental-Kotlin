@@ -1,21 +1,25 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
-/**
- * Created by mvasic on 7/2/16.
- */
 enum class PLANETS {
+
     EARTH,
     MARS,
     PLUTO
 }
 
-fun tryEnumConstantsStuff() {
+fun main(){
+
     // Returns PLUTO enum item:
     println("Value of: ${PLANETS.valueOf("PLUTO")}")
 
-    // Throws exception:
-    // println("Value of: ${PLANETS.valueOf("VENUS")}")
+    try {
 
-    // Returns array containing all enum items.
+        println("Value of: ${PLANETS.valueOf("VENUS")}")
+    } catch (e: IllegalArgumentException) {
+
+        println(e.message)
+    }
+
+    // values() func. returns array containing all enum items:
     println("Values size: ${PLANETS.values().size}")
 }
