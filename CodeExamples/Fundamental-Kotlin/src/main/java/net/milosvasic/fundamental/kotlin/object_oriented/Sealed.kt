@@ -12,7 +12,7 @@ fun main() {
     fun describe(specie: Specie) = when (specie) {
 
         is Specie.Human -> "Human ${specie.race}"
-        is Specie.Animal -> "${specie.specie} with ${specie.legsCount} legs."
+        is Specie.Animal -> "${specie.specie}, it has ${specie.legsCount} legs."
         is Specie.Bacteria -> "Some micro organism ..."
     }
 
