@@ -13,7 +13,7 @@ fun main() {
 
         is Specie.Human -> "Human ${specie.race}"
         is Specie.Animal -> "${specie.specie}, it has ${specie.legsCount} legs."
-        is Specie.Bacteria -> "Some micro organism ..."
+        is Specie.Bacteria -> "Some micro organism..."
     }
 
     val indian = describe(Specie.Human("Indian"))
