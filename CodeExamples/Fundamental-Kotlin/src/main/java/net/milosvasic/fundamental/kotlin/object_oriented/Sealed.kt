@@ -1,16 +1,20 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
-/**
- * Created by milosvasic on 6/8/16.
- */
-sealed class SuperEnum {
-    class Human(val race: String) : SuperEnum()
-    class Animal(val specie: String, val legsCount: Int) : SuperEnum()
-    object Bacteria : SuperEnum()
+sealed class Specie {
+
+    class Human(val race: String) : Specie()
+    class Animal(val specie: String, val legsCount: Int) : Specie()
+    object Bacteria : Specie()
 }
 
-fun trySuperEnum(superEnum: SuperEnum): String = when (superEnum) {
-    is SuperEnum.Human -> "Human ${superEnum.race}"
-    is SuperEnum.Animal -> "${superEnum.specie} with ${superEnum.legsCount} legs."
-    is SuperEnum.Bacteria -> "Some micro organism ..."
+fun main() {
+
+    fun describe(specie: Specie) = when (specie) {
+
+        is Specie.Human -> "Human ${specie.race}"
+        is Specie.Animal -> "${specie.specie} with ${specie.legsCount} legs."
+        is Specie.Bacteria -> "Some micro organism ..."
+    }
+
+
 }
