@@ -16,5 +16,18 @@ fun main() {
         is Specie.Bacteria -> "Some micro organism ..."
     }
 
+    val indian = describe(Specie.Human("Indian"))
+    val asian = describe(Specie.Human("Asian"))
 
+    println(indian)
+    println(asian)
+
+    val monkey = describe(Specie.Animal("Monkey", 2))
+    val horse = describe(Specie.Animal("Horse", 4))
+
+    println(monkey)
+    println(horse)
+
+    val bacteria = describe(Specie.Bacteria)
+    println(bacteria)
 }
