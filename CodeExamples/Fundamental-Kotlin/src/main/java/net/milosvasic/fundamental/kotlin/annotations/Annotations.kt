@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.object_oriented
+package net.milosvasic.fundamental.kotlin.annotations
 
 @Target(
     AnnotationTarget.CLASS,
@@ -13,9 +13,11 @@ package net.milosvasic.fundamental.kotlin.object_oriented
 @MustBeDocumented
 annotation class Marker
 
-@Marker class Annotated {
+@Marker
+class Annotated {
 
-    @Marker fun hello(@Marker who: String): String {
+    @Marker
+    fun hello(@Marker who: String): String {
 
         return (@Marker "Hello $who")
     }
