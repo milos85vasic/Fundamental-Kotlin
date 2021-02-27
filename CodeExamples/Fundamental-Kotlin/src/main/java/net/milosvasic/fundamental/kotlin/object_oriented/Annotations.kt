@@ -5,7 +5,9 @@ package net.milosvasic.fundamental.kotlin.object_oriented
     AnnotationTarget.CONSTRUCTOR,
     AnnotationTarget.FUNCTION,
     AnnotationTarget.VALUE_PARAMETER,
-    AnnotationTarget.EXPRESSION
+    AnnotationTarget.EXPRESSION,
+    AnnotationTarget.PROPERTY_SETTER,
+    AnnotationTarget.PROPERTY_GETTER
 )
 @Retention(AnnotationRetention.SOURCE)
 @MustBeDocumented
@@ -20,6 +22,12 @@ annotation class Marker
 }
 
 class Annotated2 @Marker constructor()
+
+class Annotated3 {
+
+    var number: Int? = null
+        @Marker set
+}
 
 fun main() {
 
