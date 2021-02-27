@@ -2,6 +2,7 @@ package net.milosvasic.fundamental.kotlin.object_oriented
 
 @Target(
     AnnotationTarget.CLASS,
+    AnnotationTarget.CONSTRUCTOR,
     AnnotationTarget.FUNCTION,
     AnnotationTarget.VALUE_PARAMETER,
     AnnotationTarget.EXPRESSION
@@ -17,6 +18,8 @@ annotation class Marker
         return (@Marker "Hello $who")
     }
 }
+
+class Annotated2 @Marker constructor()
 
 fun main() {
 
