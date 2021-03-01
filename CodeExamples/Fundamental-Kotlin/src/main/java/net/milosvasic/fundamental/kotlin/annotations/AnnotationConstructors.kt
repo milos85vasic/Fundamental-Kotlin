@@ -1,5 +1,5 @@
 package net.milosvasic.fundamental.kotlin.annotations
 
-fun main() {
+annotation class Description(val desc: String)
 
-}
+@Description("I am a dummy class") class Dummy
