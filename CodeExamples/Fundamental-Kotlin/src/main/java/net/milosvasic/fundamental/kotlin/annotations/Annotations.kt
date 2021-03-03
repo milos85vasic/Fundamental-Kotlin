@@ -4,6 +4,8 @@ package net.milosvasic.fundamental.kotlin.annotations
     AnnotationTarget.CLASS,
     AnnotationTarget.CONSTRUCTOR,
     AnnotationTarget.FUNCTION,
+    AnnotationTarget.FIELD,
+    AnnotationTarget.TYPE_PARAMETER,
     AnnotationTarget.VALUE_PARAMETER,
     AnnotationTarget.EXPRESSION,
     AnnotationTarget.PROPERTY_SETTER,
