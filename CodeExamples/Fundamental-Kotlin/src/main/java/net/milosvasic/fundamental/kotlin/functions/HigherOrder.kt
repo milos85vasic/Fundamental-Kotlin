@@ -1,22 +1,20 @@
 package net.milosvasic.fundamental.kotlin.functions
 
-/**
- * Created by mvasic on 7/30/16.
- */
-fun higherOrderExample(execute: () -> String): String {
-    return execute.invoke()
-}
+fun main() {
 
-fun printString(): String {
-    return "Some string..."
-}
+    fun execute(what: () -> String): String {
 
-fun useHigherOrderExample() {
-    val string = higherOrderExample(::printString)
+        return what()
+    }
+
+    fun printString(): String {
+
+        return "Some string..."
+    }
+
+    var string = execute(::printString)
     println(string)
-}
 
-fun useHigherOrderExampleLambda() {
-    val string = higherOrderExample { "Yet some other string" }
+    string = execute { "Yet some other string" }
     println(string)
 }
