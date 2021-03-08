@@ -1,15 +1,43 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.generics
 
-
 fun main() {
 
-    fun <T> genericFunctionsExample(x: T) {
+    abstract class Engine {
 
-        println("Value: $x")
+        abstract val power: Long
+
+        override fun toString(): String {
+
+            return "Engine(power=$power)"
+        }
     }
 
-    genericFunctionsExample(5)
-    genericFunctionsExample("Some word!")
-    genericFunctionsExample('c')
-    genericFunctionsExample(5.55)
+    class RocketEngine : Engine() {
+
+        override val power: Long
+            get() = 1000
+    }
+
+    class TruckEngine : Engine() {
+
+        override val power: Long
+            get() = 100
+    }
+
+    class EngineDiagnostics {
+
+        fun <T : Engine> checkEngine(engine: T) {
+
+            println(engine)
+        }
+    }
+
+    val truckEngine = TruckEngine()
+    val rocketEngine = RocketEngine()
+    val diagnostics = EngineDiagnostics()
+
+    diagnostics.checkEngine(truckEngine)
+    diagnostics.checkEngine(rocketEngine)
 }
+
+
