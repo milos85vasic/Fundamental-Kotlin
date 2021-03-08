@@ -1,13 +1,13 @@
-package net.milosvasic.fundamental.kotlin.functions
+package net.milosvasic.fundamental.kotlin.object_oriented.generics
 
-/**
- * Created by mvasic on 7/20/16.
- */
-fun <T> genericFunctionsExample(x: T){
-    println("Value: $x")
-}
 
-fun tryGenericFunctionsExampe(){
+fun main() {
+
+    fun <T> genericFunctionsExample(x: T) {
+
+        println("Value: $x")
+    }
+
     genericFunctionsExample(5)
     genericFunctionsExample("Some word!")
     genericFunctionsExample('c')
