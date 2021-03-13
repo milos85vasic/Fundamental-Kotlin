@@ -2,7 +2,7 @@ package net.milosvasic.fundamental.kotlin.object_oriented
 
 fun main() {
 
-    open class Greetings {
+    open class A {
 
         fun hello() = println("Hello")
 
@@ -16,7 +16,7 @@ fun main() {
         }
     }
 
-    class Greeter : Greetings() {
+    class B : A() {
 
         override fun greeting() {
 
@@ -25,14 +25,14 @@ fun main() {
         }
     }
 
-    val greetings = Greetings()
-    val greeter = Greeter()
+    val a = A()
+    val b = B()
 
-    println("Greetings:")
-    greetings.hello()
-    greetings.greeting()
+    println("A:")
+    a.hello()
+    a.greeting()
 
-    println("Greeter:")
-    greeter.hello()
-    greeter.greeting()
+    println("B:")
+    b.hello()
+    b.greeting()
 }
