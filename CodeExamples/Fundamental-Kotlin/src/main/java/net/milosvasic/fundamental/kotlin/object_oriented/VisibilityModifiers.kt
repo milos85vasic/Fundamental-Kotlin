@@ -2,7 +2,7 @@ package net.milosvasic.fundamental.kotlin.object_oriented
 
 fun main() {
 
-    abstract class Greetings {
+    open class Greetings {
 
         fun hello() = println("Hello")
 
@@ -10,7 +10,10 @@ fun main() {
 
         private fun helloWorld() = println("Hello world")
 
-        abstract fun greeting()
+        open fun greeting() {
+
+            helloWorld()
+        }
     }
 
     class Greeter : Greetings() {
