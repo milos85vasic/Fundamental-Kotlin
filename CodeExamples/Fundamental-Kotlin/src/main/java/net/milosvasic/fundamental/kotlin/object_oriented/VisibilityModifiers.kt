@@ -28,9 +28,11 @@ fun main() {
     val greetings = Greetings()
     val greeter = Greeter()
 
+    println("Greetings:")
     greetings.hello()
     greetings.greeting()
 
+    println("Greeter:")
     greeter.hello()
     greeter.greeting()
 }
