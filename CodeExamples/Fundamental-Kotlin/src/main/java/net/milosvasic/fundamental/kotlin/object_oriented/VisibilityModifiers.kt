@@ -25,14 +25,14 @@ fun main() {
         }
     }
 
-    val a = A()
-    val b = B()
+val a = A()
+val b = B()
 
-    println("A:")
-    a.hello()
-    a.greeting()
+println("A:")
+a.hello()
+a.greeting()
 
-    println("B:")
-    b.hello()
-    b.greeting()
+println("B:")
+b.hello()
+b.greeting()
 }
