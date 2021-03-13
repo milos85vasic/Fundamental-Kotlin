@@ -25,7 +25,11 @@ fun main() {
         }
     }
 
+    val greetings = Greetings()
     val greeter = Greeter()
+
+    greetings.hello()
+    greetings.greeting()
 
     greeter.hello()
     greeter.greeting()
