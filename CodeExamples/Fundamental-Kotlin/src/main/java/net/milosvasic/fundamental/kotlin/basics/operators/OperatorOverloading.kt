@@ -1,6 +1,6 @@
-package net.milosvasic.fundamental.kotlin.misc
+package net.milosvasic.fundamental.kotlin.basics.operators
 
-fun main(){
+fun main() {
 
     class OvrldExmpl(var value: String) {
         operator fun plus(toAdd: OvrldExmpl): OvrldExmpl {
