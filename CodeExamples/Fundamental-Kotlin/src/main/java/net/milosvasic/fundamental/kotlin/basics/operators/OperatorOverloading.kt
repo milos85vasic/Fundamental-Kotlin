@@ -11,8 +11,7 @@ fun main() {
 
         operator fun plus(what: String): Example {
 
-            value = "$value, $what"
-            return this
+            return Example("$value, $what")
         }
 
         override fun toString() = value
