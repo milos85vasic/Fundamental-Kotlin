@@ -1,15 +1,13 @@
 package net.milosvasic.fundamental.kotlin.misc
 
-/**
- * Created by milosvasic on 8/8/16.
- */
-class OvrldExmpl(var value: String) {
-    operator fun plus(toAdd: OvrldExmpl): OvrldExmpl {
-        return OvrldExmpl(value + ", " + toAdd.value)
-    }
-}
+fun main(){
 
-fun operatorOverloadingExample() {
+    class OvrldExmpl(var value: String) {
+        operator fun plus(toAdd: OvrldExmpl): OvrldExmpl {
+            return OvrldExmpl(value + ", " + toAdd.value)
+        }
+    }
+
     val a = OvrldExmpl("One")
     val b = OvrldExmpl("Two")
     val c = OvrldExmpl("Three")
