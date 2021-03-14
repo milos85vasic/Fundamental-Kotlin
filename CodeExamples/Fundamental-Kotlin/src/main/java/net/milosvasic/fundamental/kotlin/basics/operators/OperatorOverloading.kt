@@ -2,22 +2,39 @@ package net.milosvasic.fundamental.kotlin.basics.operators
 
 fun main() {
 
-    class OvrldExmpl(var value: String) {
-        operator fun plus(toAdd: OvrldExmpl): OvrldExmpl {
-            return OvrldExmpl(value + ", " + toAdd.value)
+    class Example(var value: String) {
+
+        operator fun plus(what: Example): Example {
+
+            return Example("$value, ${what.value}")
         }
+
+        operator fun plus(what: String): Example {
+
+            value = "$value, $what"
+            return this
+        }
+
+        override fun toString() = value
     }
 
-    val a = OvrldExmpl("One")
-    val b = OvrldExmpl("Two")
-    val c = OvrldExmpl("Three")
+    val a = Example("A")
+    val b = Example("B")
+    val c = Example("C")
 
-    val d = a + b
-    val e = a + b + c
+    val ab = a + b
+    val abc = a + b + c
 
-    println("A: ${a.value}")
-    println("B: ${b.value}")
-    println("C: ${c.value}")
-    println("D: ${d.value}")
-    println("E: ${e.value}")
+    val a2 = a + "Hello"
+    val a3 = a + "Hello" + "World"
+
+    val bc = b + "Hello" + c
+    val bc2 = b + c + "Hello"
+
+    println("a + b = $ab")
+    println("a + b + c = $abc")
+    println("a + 'Hello' = $a2")
+    println("a + 'Hello' + 'World' = $a3")
+    println("b + 'Hello' + c = $bc")
+    println("b + c + 'Hello' = $bc2")
 }

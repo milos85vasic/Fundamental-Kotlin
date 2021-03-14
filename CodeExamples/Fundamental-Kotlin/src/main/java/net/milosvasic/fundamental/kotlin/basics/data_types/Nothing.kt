@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.misc
+package net.milosvasic.fundamental.kotlin.basics.data_types
 
 fun main() {
 
