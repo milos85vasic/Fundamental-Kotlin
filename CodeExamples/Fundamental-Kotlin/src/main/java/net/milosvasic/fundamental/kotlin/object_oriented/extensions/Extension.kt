@@ -1,4 +1,4 @@
-package net.milosvasic.fundamental.kotlin.idioms
+package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 
 fun Activity.goBack() {
     // We will pop back stack here ...
