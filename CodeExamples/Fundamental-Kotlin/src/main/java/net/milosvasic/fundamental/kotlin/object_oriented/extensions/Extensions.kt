@@ -18,7 +18,7 @@ fun main() {
 
     fun Hello.repeat(count: Int, what: String) {
 
-        for (x in 0..count) {
+        for (x in 0 until count) {
 
             println(what)
         }
