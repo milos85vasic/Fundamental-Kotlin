@@ -3,35 +3,39 @@ package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 fun main(){
 
 
-    class Parent {
+    class Hello {
 
-        fun doSomething() {
+        fun world() {
 
-            println("Do something...")
+            println("Hello world")
         }
     }
 
-    fun Parent.doSomething() {
+    fun Hello.everybody() {
 
-        this.doSomething()
-        println("And the extended it.")
+        world()
+        println("Hello everybody")
     }
 
-    fun Parent.doSomething(x: Int) {
+    fun Hello.repeat(count: Int, what: String) {
 
-        println("Extended with parameter passed")
+        for (x in 0..count) {
+
+            println(what)
+        }
     }
 
-    fun Parent.doSomething2() {
+    fun Hello.stranger() {
 
-        println("Extended with new method")
+        println("Hello stranger")
     }
 
-    val parent = Parent()
+    val parent = Hello()
     with(parent) {
 
-        doSomething()
-        doSomething(5)
-        doSomething2()
+        world()
+        everybody()
+        repeat(3,"Woo-hoo")
+        stranger()
     }
 }
