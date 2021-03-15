@@ -1,31 +1,37 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 
+fun main(){
 
-class Parent {
-    fun doSomething() {
-        println("Do something...")
+
+    class Parent {
+
+        fun doSomething() {
+
+            println("Do something...")
+        }
     }
-}
 
-class Child {
     fun Parent.doSomething() {
+
         this.doSomething()
         println("And the extended it.")
     }
 
     fun Parent.doSomething(x: Int) {
+
         println("Extended with parameter passed")
     }
 
     fun Parent.doSomething2() {
+
         println("Extended with new method")
     }
 
-    fun tryout(parent: Parent) {
-        with(parent) {
-            doSomething()
-            doSomething(5)
-            doSomething2()
-        }
+    val parent = Parent()
+    with(parent) {
+
+        doSomething()
+        doSomething(5)
+        doSomething2()
     }
 }
