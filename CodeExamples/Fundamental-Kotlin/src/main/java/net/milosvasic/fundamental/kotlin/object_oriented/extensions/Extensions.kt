@@ -1,6 +1,6 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 
-fun main(){
+fun main() {
 
     class Hello {
 
@@ -29,12 +29,9 @@ fun main(){
         println("Hello stranger")
     }
 
-    val parent = Hello()
-    with(parent) {
-
-        world()
-        everybody()
-        repeat(3,"Woo-hoo")
-        stranger()
-    }
+    val hello = Hello()
+    hello.world()
+    hello.everybody()
+    hello.repeat(3, "Woo-hoo")
+    hello.stranger()
 }
