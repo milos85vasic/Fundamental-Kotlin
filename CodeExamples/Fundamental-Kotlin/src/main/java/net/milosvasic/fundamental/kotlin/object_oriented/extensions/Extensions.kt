@@ -30,6 +30,7 @@ fun main() {
     }
 
     val hello = Hello()
+
     hello.world()
     hello.everybody()
     hello.repeat(3, "Woo-hoo")
