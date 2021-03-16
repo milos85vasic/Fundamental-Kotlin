@@ -1,15 +1,16 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 
-class ToBeExtended {
+class ExtendMe {
+
     val a = 15
 }
 
-class ExtendsProperty {
-    val ToBeExtended.b: Int
-        get() = 25
+val ExtendMe.b: Int
+    get() = 25
 
-    fun tryout(e: ToBeExtended) {
-        println("A: ${e.a}")
-        println("A: ${e.b}")
-    }
+fun main(){
+
+    val extended = ExtendMe()
+    println("A: ${extended.a}")
+    println("B: ${extended.b}")
 }
