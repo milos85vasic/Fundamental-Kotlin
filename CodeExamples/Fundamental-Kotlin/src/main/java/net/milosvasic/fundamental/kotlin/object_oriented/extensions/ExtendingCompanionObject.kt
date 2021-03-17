@@ -1,21 +1,28 @@
 package net.milosvasic.fundamental.kotlin.object_oriented.extensions
 
-class HasCompanion {
+class Example {
+
     companion object {
-        val a = 10
+
+        const val a = 10
+
         fun printA() {
+
             println("A: $a")
         }
     }
 }
 
-class ExtendsCompanioObjectClass {
-    fun HasCompanion.Companion.printB(){
-        println("B: ${ a + 100 }")
-    }
+val Example.Companion.b: Int
+    get() = 20
 
-    fun tryExtendingCompanionObject(){
-        HasCompanion.printA()
-        HasCompanion.printB()
-    }
+fun Example.Companion.printB(){
+
+    println("B: $b")
+}
+
+fun main(){
+
+    Example.printA()
+    Example.printB()
 }
