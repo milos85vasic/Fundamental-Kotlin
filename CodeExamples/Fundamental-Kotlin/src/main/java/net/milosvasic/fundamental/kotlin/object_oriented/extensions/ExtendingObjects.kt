@@ -7,7 +7,7 @@ interface Drawing {
 
 class Objects {
 
-    val CIRCLE = object : Drawing {
+    val circle = object : Drawing {
 
         override fun draw() {
 
@@ -16,7 +16,7 @@ class Objects {
     }
 }
 
-val Objects.SQUARE: Drawing
+val Objects.square: Drawing
     get() = object : Drawing {
 
         override fun draw() {
@@ -30,7 +30,7 @@ fun main() {
     val o = Objects()
     with(o) {
 
-        CIRCLE.draw()
-        SQUARE.draw()
+        circle.draw()
+        square.draw()
     }
 }
