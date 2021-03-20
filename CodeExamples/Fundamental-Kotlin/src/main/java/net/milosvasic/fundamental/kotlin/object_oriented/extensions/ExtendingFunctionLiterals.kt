@@ -10,5 +10,13 @@ fun main() {
         }
     }
 
+    val printQuoted: Printer.(what: String) -> Unit = {
 
+        what ->
+        print("\"$what\"")
+    }
+
+    val printer = Printer()
+    printer.print("Hello world")
+    printer.printQuoted("Lorem ipsum")
 }
