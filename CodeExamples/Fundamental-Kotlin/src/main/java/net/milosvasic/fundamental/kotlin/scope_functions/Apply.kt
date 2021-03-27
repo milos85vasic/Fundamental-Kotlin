@@ -8,6 +8,11 @@ fun main() {
         var lastName = ""
         var address = ""
         var email = ""
+
+        override fun toString(): String {
+
+            return "User(firstName='$firstName', lastName='$lastName', address='$address', email='$email')"
+        }
     }
 
     val user = User().apply {
