@@ -6,14 +6,14 @@ fun main() {
 
     numbers.forEach {
 
-        val notZero = it.takeUnless { it == 0 }
-        notZero?.let { nZero ->
+        it.takeUnless { it == 0 }
+            ?.let { nZero ->
 
-            val positive = nZero.takeIf { it > 0 }
-            positive?.let { pos ->
+                nZero.takeIf { nZero > 0 }
+                    ?.let { pos ->
 
-                println("Positive, non zero number: $pos")
+                        println("Positive, non zero number: $pos")
+                    }
             }
-        }
     }
 }
