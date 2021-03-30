@@ -1,44 +1,27 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
-class SingletonExample private constructor() {
+object Single {
 
-    companion object {
-        private val instance = SingletonExample()
+    var value = 0
 
-        fun instance(): SingletonExample = instance
-    }
-
-    var x = 0
-
-    fun printX() {
-        println("X: ${x}.")
+    fun print() {
+        println("Value: $value, Hash: ${this.hashCode()}")
     }
 }
 
 fun main() {
 
-    val example1 = SingletonExample.instance()
-    val example2 = SingletonExample.instance()
-    val example3 = SingletonExample.instance()
+    val s1 = Single
+    val s2 = Single
+    val s3 = Single
 
-    example1.x = 101
+    s1.print()
+    s2.print()
+    s3.print()
 
-    println("- - - - - - - -")
-    example1.printX()
-    example2.printX()
-    example3.printX()
+    s1.value = 100
 
-    example2.x = 202
-
-    println("- - - - - - - -")
-    example1.printX()
-    example2.printX()
-    example3.printX()
-
-    example3.x = 303
-
-    println("- - - - - - - -")
-    example1.printX()
-    example2.printX()
-    example3.printX()
+    s1.print()
+    s2.print()
+    s3.print()
 }
