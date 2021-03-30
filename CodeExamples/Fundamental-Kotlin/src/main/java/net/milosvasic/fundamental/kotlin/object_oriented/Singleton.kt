@@ -1,9 +1,7 @@
 package net.milosvasic.fundamental.kotlin.object_oriented
 
-/**
- * Created by mvasic on 7/4/16.
- */
 class SingletonExample private constructor() {
+
     companion object {
         private val instance = SingletonExample()
 
@@ -17,7 +15,8 @@ class SingletonExample private constructor() {
     }
 }
 
-fun trySingleton() {
+fun main() {
+
     val example1 = SingletonExample.instance()
     val example2 = SingletonExample.instance()
     val example3 = SingletonExample.instance()
