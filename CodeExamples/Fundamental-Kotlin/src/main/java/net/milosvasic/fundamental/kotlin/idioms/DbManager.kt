@@ -1,23 +1,21 @@
 package net.milosvasic.fundamental.kotlin.idioms
 
+class SQLiteDatabase
+
+class DbHelper(val dbName: String, val dbVersion: Int) {
+
+    fun getWritableDatabase(): SQLiteDatabase = SQLiteDatabase()
+}
 
 object DbManager {
 
-    val version = 1
-    val name = "cars"
+    private const val dbName = "cars"
+    private const val dbVersion = 1
 
-    val db: SQLiteDatabase by lazy {
-        DbHelper(name, version).writableDatabase()
+    val database: SQLiteDatabase by lazy {
+
+        DbHelper(dbName, dbVersion).getWritableDatabase()
     }
-
-}
-
-class SQLiteDatabase
-
-class DbHelper(val name: String, val version: Int) {
-
-    fun writableDatabase(): SQLiteDatabase = SQLiteDatabase()
-
 }
 
 
