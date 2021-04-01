@@ -2,18 +2,28 @@ package net.milosvasic.fundamental.kotlin.object_oriented
 
 fun main() {
 
-    class SomeExampleClass {
-        fun printMe() {
-            println("I am late initialized!")
+    class X {
+
+        init {
+
+            println("I am late initialized")
+        }
+
+        fun doSomething() = print("Hello")
+    }
+
+    class Y {
+
+        lateinit var x: X
+
+        fun doSomething() {
+
+            x = X()
+            x.doSomething()
+            print(" World!")
         }
     }
 
-    class Late {
-        lateinit var x: SomeExampleClass
-
-        fun printMe() {
-            x = SomeExampleClass()
-            x.printMe()
-        }
-    }
+    val y = Y()
+    y.doSomething()
 }
