@@ -21,5 +21,5 @@ fun main() {
     val n2 = Nested1.Nested2()
     val n3 = Nested1.Nested2.Nested3()
 
-    println("Values ${n1.a}, ${n2.a}, ${n3.a}")
+    println("Values: ${n1.a}, ${n2.a}, ${n3.a}")
 }
