@@ -12,6 +12,6 @@ fun main() {
         }
     }
 
-    val x = A().B()
-    println("Value of b is: ${x.b}")
+    val v = A().B()
+    println("Value of b is: ${v.b}")
 }
