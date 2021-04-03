@@ -2,16 +2,16 @@ package net.milosvasic.fundamental.kotlin.object_oriented
 
 fun main() {
 
-    class InnerExample {
+    class A {
 
         val a = 100
 
-        inner class Inner {
+        inner class B {
 
             val b = a
         }
     }
 
-    val x = InnerExample().Inner()
+    val x = A().B()
     println("Value of b is: ${x.b}")
 }
