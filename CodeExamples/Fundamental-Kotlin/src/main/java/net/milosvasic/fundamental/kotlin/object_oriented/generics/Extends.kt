@@ -4,27 +4,27 @@ fun main() {
 
     abstract class Airplane {
 
-        abstract fun describeMe()
+        abstract fun describe()
     }
 
     class Boeing : Airplane() {
 
-        override fun describeMe() {
+        override fun describe() {
             println("Being")
         }
     }
 
     class Airbus : Airplane() {
 
-        override fun describeMe() {
+        override fun describe() {
             println("Airbus")
         }
     }
 
     class AirplaneDescriptor {
 
-        fun <T : Airplane> describeMe(airplane: T) {
-            airplane.describeMe()
+        fun <T : Airplane> describe(airplane: T) {
+            airplane.describe()
         }
     }
 
@@ -32,6 +32,6 @@ fun main() {
     val airplane2 = Boeing()
     val descriptor = AirplaneDescriptor()
 
-    descriptor.describeMe(airplane1)
-    descriptor.describeMe(airplane2)
+    descriptor.describe(airplane1)
+    descriptor.describe(airplane2)
 }
