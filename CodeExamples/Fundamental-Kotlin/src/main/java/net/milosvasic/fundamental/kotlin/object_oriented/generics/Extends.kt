@@ -18,7 +18,7 @@ fun main() {
 
         override fun describe() {
             println("Airbus")
-        }
+        }l
     }
 
     class AirplaneDescriptor {

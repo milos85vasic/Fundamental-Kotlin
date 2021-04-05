@@ -1,28 +1,28 @@
 package net.milosvasic.fundamental.kotlin.delegation
 
-/**
- * Created by mvasic on 7/4/16.
- */
 interface Flying {
+
     fun fly()
 }
 
-class Plane : Flying {
-    override fun fly() {
-        println("PLANE")
+fun main() {
+
+    class Plane : Flying {
+
+        override fun fly() {
+            println("PLANE")
+        }
     }
-}
 
-class Zeppelin : Flying {
-    override fun fly() {
-        println("ZEPPELIN")
+    class Zeppelin : Flying {
+
+        override fun fly() {
+            println("ZEPPELIN")
+        }
     }
-}
 
-class Traveling(fly: Flying) : Flying by fly {
-}
+    class Traveling(fly: Flying) : Flying by fly
 
-fun delegateExample() {
     val plane = Plane()
     val zeppelin = Zeppelin()
 
