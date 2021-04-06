@@ -16,13 +16,13 @@ fun main() {
 
         override fun getValue(thisRef: Any, property: KProperty<*>): Int {
 
-            println("Value GET: ${property.name}")
+            println("Value GET: ${property.name} -> $value")
             return value
         }
 
         override fun setValue(thisRef: Any, property: KProperty<*>, value: Int) {
 
-            println("Value SET: ${property.name} to $value")
+            println("Value SET: ${property.name} -> $value")
             this.value = value
         }
     }
