@@ -8,13 +8,10 @@ fun main() {
         val hello: String by lazy {
 
             println("I am initializing this lazy value")
-            "Hello!"
+            "Hello"
         }
     }
 
     val example = Example()
-
-    val a = example.hello
-    val b = example.hello
-    val c = example.hello
+    println(example.hello)
 }
