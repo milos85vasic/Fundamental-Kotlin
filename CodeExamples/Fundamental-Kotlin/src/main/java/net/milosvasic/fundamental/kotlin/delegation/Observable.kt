@@ -2,19 +2,22 @@ package net.milosvasic.fundamental.kotlin.delegation
 
 import kotlin.properties.Delegates
 
-/**
- * Created by mvasic on 7/19/16.
- */
-class ObservableExample {
-    var toBeDelegated: String by Delegates.observable("Initial value!") {
-        property, oldValue, newValue ->
-        println("[ old: $oldValue ][ new: $newValue ]")
-    }
-}
 
-fun observeValueChanges(){
-    val observe = ObservableExample()
-    observe.toBeDelegated = "Some new value"
-    observe.toBeDelegated = "And some more..."
-    observe.toBeDelegated = "And more... ;)"
+fun main(){
+
+    class Example {
+
+        val default = "No value"
+
+        var value: String by Delegates.observable(default) {
+                _, oldValue, newValue ->
+
+            println("Old: $oldValue, new: $newValue")
+        }
+    }
+
+    val observe = Example()
+    observe.value = "Hello world!"
+    observe.value = "Lorem ipsum..."
+    observe.value = "And so on..."
 }
