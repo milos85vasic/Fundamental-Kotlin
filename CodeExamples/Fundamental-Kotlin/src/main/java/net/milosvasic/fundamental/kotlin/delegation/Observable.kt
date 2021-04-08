@@ -16,8 +16,8 @@ fun main(){
         }
     }
 
-    val observe = Example()
-    observe.value = "Hello world!"
-    observe.value = "Lorem ipsum..."
-    observe.value = "And so on..."
+    val example = Example()
+    example.value = "Hello world!"
+    example.value = "Lorem ipsum..."
+    example.value = "And so on..."
 }
