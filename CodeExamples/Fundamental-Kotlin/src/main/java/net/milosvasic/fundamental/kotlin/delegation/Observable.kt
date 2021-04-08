@@ -5,16 +5,16 @@ import kotlin.properties.Delegates
 
 fun main(){
 
-class Example {
+    class Example {
 
-    val default = "No value"
+        val default = "No value"
 
-    var value: String by Delegates.observable(default) {
-            property, oldValue, newValue ->
+        var value: String by Delegates.observable(default) {
+                property, oldValue, newValue ->
 
-        println("${property.name}: old='$oldValue', new='$newValue'")
+            println("${property.name}: old='$oldValue', new='$newValue'")
+        }
     }
-}
 
     val observe = Example()
     observe.value = "Hello world!"
