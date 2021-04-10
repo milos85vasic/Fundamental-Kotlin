@@ -8,7 +8,7 @@ fun main() {
         .append("Numbers: ")
 
     val numbers = StringBuilder()
-    for (number in 1 until 3) {
+    for (number in 1..3) {
 
         numbers.append(number)
             .append(" ")
