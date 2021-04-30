@@ -11,9 +11,9 @@ fun main(){
     val map4 = hashMapOf("hello" to "world", "lorem" to "ipsum", "abc" to "def")
     val map5 = linkedMapOf("hello" to "world", "lorem" to "ipsum", "abc" to "def")
 
-    println(map1)
-    println(map2)
-    println(map3)
-    println(map4)
-    println(map5)
+    println("mapOf=$map1")
+    println("mutableMapOf=$map2")
+    println("sortedMapOf=$map3")
+    println("hashMapOf=$map4")
+    println("linkedMapOf=$map5")
 }
