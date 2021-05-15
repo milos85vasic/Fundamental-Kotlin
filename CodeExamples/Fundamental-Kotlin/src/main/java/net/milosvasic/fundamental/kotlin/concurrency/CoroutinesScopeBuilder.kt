@@ -21,7 +21,7 @@ suspend fun fire() = coroutineScope {
             for (y in 0..5) {
 
                 delay(1000L)
-                println("Job $x, count no. $y at ${System.currentTimeMillis()}")
+                println("Job $x, count no. $y at: ${System.currentTimeMillis()}")
             }
         }
     }
