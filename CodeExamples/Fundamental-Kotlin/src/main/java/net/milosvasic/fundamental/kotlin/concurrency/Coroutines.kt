@@ -6,8 +6,6 @@ import kotlinx.coroutines.runBlocking
 
 fun main() {
 
-
-
     runBlocking {
 
         // Launch a new coroutine and continue:
