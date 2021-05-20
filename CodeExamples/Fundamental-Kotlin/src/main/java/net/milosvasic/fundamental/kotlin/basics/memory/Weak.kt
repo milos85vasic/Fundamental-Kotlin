@@ -7,7 +7,7 @@ fun main() {
     // Referent definition, some 'dummy' class:
     class Dummy {
 
-        // Referent's method:
+        // Referent's function:
         fun hello() = println("Dummy: ${hashCode()}")
     }
 

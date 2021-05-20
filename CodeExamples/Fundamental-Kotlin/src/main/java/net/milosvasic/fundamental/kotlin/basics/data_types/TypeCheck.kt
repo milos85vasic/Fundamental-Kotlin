@@ -1,6 +1,5 @@
 package net.milosvasic.fundamental.kotlin.basics.data_types
 
-import kotlin.jvm.Throws
 import kotlin.math.pow
 
 fun main() {
@@ -14,7 +13,7 @@ fun main() {
         if (x is Double) {
             return x.pow(2.0)
         }
-        throw IllegalArgumentException("This method deals only with doubles")
+        throw IllegalArgumentException("This function deals only with doubles")
     }
 
     /**

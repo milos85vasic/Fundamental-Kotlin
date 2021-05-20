@@ -8,7 +8,7 @@ class NullExamplesKt {
 
     fun crashMyApp() {
 
-        // Calling 'length()' method will crash the application:
+        // Calling 'length()' function will crash the application:
         val size = nullStringVariable!!.length
         println("Length is: $size")
     }
