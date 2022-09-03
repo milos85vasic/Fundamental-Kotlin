@@ -1,12 +1,31 @@
-
 buildscript {
+
+    ext.kotlin_version = "1.7.10"
+
     repositories {
-        jcenter()
+
+        google()
         mavenCentral()
+    }
+
+    dependencies {
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
-repositories {
-    jcenter()
-    mavenCentral()
+allprojects {
+
+    repositories {
+
+        google()
+        mavenCentral()
+    }
+
+    apply plugin: "kotlin"
+
+    dependencies {
+
+        api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    }
 }

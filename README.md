@@ -1,4 +1,7 @@
-# Fundamental Kotlin, Second Edition
-Examples for the [Fundamental Kotlin](http://www.fundamental-kotlin.com/) book.
+# Fundamental Kotlin: revised
 
-[Milos Vasic](http://www.milosvasic.net/), Summer / Fall 2017.
+![](Book_Cover.png)
+
+Examples for the 3rd edition of the  [Fundamental Kotlin](http://www.fundamental-kotlin.com/) book.
+
+[Miloš Vasić](http://www.milosvasic.net/), 2022.
