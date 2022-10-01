@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="install_upstreams.sh" type="BashProRunConfiguration" folderName="Software Toolkit">
+    <option name="scriptPath" value="$PROJECT_DIR$/Upstreamable/install_upstreams.sh" />
+    <option name="workingDirectory" value="$PROJECT_DIR$" />
+    <RunnerSettings bashdbVersion="Automatic" bashPathMapper="Automatic" RunnerId="pro.bashsupport.shDebugRunner" />
+    <method v="2" />
+  </configuration>
+</component>
